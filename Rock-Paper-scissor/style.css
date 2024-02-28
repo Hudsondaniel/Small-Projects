@@ -1,0 +1,110 @@
+
+
+@font-face {
+    font-family: 'milkhoney';
+    src: url(Assets/Font/orangejuice.ttf) format('truetype'); 
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    font-family:'milkhoney', serif; 
+    background-image: url(Assets/Images/9zly_8ztc_210511.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.Main-container{
+    
+     max-width: auto;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     
+   
+}
+
+.rock-paper-scissor{
+    background-color: white;
+    padding: 0px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2em solid;
+    border-color: #006400;
+    border-radius: 0.5em;
+    background-image: url(Assets/Images/lvxj_twey_210409.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.img-container{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.rock{
+    width: 250px;
+    height: 200px;
+    border: 0.2em solid;
+    border-color: #006400;
+    margin-right: 50px;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+
+.rock:hover{
+    transform: scale(1.15);
+    background: black ;
+    box-shadow: 4px 4px 4px black;
+    z-index: 2;
+}
+
+.scissor{
+    width: 200px;
+    height: 200px;
+    border: 0.2em solid;
+    border-color: #006400;
+    margin-right: 50px;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+
+.scissor:hover{
+    transform: scale(1.15);
+    background: black ;
+    box-shadow: 4px 4px 4px black;
+    z-index: 2;
+}
+
+.paper{
+    width: 250px;
+    height: 200px;
+    border: 0.2em solid;
+    border-color: #006400;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+
+.paper:hover{
+    transform: scale(1.15);
+    background: black ;
+    box-shadow: 4px 4px 4px black;
+    z-index: 2;
+}
