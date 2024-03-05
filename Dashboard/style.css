@@ -48,7 +48,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns:300px 1fr;
-    grid-template-rows: 200px 1fr; 
+    grid-template-rows: 150px 1fr; 
     grid-template-areas: 
     "sidebar header"
     "sidebar body"
@@ -58,13 +58,14 @@ body {
 
 .sidebar{
     grid-area: sidebar;
-    background-color: black;
+    background-color: rgb(0, 150, 250);
      
 }
 
 .header{
     grid-area: header;
     background-color: white;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .Projects{
@@ -76,11 +77,40 @@ body {
 .Your-Projects{
     display: grid;
     gap: 25px 20px;
-    padding: 15px;
-    grid-template: 0.33fr 0.33fr 0.33fr/0.5fr 0.5fr;      
+    padding: 25px;
+    grid-template: 0.4fr 0.4fr 0.4fr/0.5fr 0.5fr;      
 }
 
 .card{
+    display: grid;
+    grid-template-columns: 10px 1fr;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    border-radius: 60px;
+    background-color: rgb(255, 145, 0);
+}
+
+
+.right-section{
+    display: grid;
+    gap: 25px 20px;
+    padding: 25px;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+.announcements{
+    background-color: white;
+    border-radius: 20px;
+    gap: 25px 20px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.trending{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
