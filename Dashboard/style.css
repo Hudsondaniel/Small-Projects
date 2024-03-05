@@ -76,7 +76,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns:300px 1fr;
-    grid-template-rows: 175px 1fr; 
+    grid-template-rows: 150px 1fr; 
     grid-template-areas: 
     "sidebar header"
     "sidebar body"
@@ -140,7 +140,7 @@ body {
     padding-top: 40px;
 }
 
-/* Header Design */
+/* Header Design section 1*/
 
 .header{
     display: grid;
@@ -155,6 +155,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
 
 .notification-profile{
@@ -172,9 +176,14 @@ body {
 
 .profile-box{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
+
+}
+
+.img{
+    padding-right: 30px;
 }
 
 .profile{
@@ -183,10 +192,6 @@ body {
     align-items: center;
 }
 
-.profile-buttons{
-    display: flex;
-    flex-direction: row;
-}
 
 .search-bar-container{
     display: grid;
@@ -195,9 +200,10 @@ body {
 }
 
 .search-bar{
-    width: 500px;
+    width: 600px;
     height: 25px;
     gap: 10px;
+    margin-left: 5px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -222,6 +228,7 @@ body {
 .notification{
     display: flex;
     align-items: center;
+    padding-right: 30px;
 
 }
 
@@ -233,8 +240,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
+
+
+
+/*Header design part 2 end*/
 
 .Projects{
     display: grid;
