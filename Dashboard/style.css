@@ -57,10 +57,29 @@ body {
 }
 
 .sidebar{
+    display: grid;
     grid-area: sidebar;
     background-color: rgb(0, 150, 250);
-     
+    grid-template-rows: 0.1fr 0.4fr 0.3fr;    
 }
+
+.main-icon{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.items1{
+    display: grid;
+    grid-template-rows: repeat(6, 0.2fr);
+    grid-template-columns: 70px 1fr;
+}
+
+.items2{
+    display: grid;
+    grid-template-rows: repeat(3, 0.2fr);
+    grid-template-columns: 70px 1fr;
+}
+
 
 .header{
     grid-area: header;
@@ -84,16 +103,19 @@ body {
 .card{
     display: grid;
     grid-template-columns: 10px 1fr;
-    background-color: white;
+    background-color: rgb(255, 145, 0);
     border-radius: 20px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .content{
-    border-radius: 60px;
-    background-color: rgb(255, 145, 0);
+    display: grid;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-
 
 .right-section{
     display: grid;
