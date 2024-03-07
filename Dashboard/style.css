@@ -319,19 +319,53 @@ body {
 }
 /*Project section end*/
 
+/* Right section */
+
 .right-section{
     display: grid;
     gap: 25px 20px;
-    padding: 25px;
-    grid-template-rows: 0.5fr 0.5fr;
+    padding: 20px 20px 20px 0px;
+    grid-template-rows: 1fr 1fr;
+    
 }
 
+/* Announcements section */
+
 .announcements{
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr;
+    gap: 15px;
     background-color: white;
     border-radius: 20px;
-    gap: 25px 20px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 25px;
 }
+
+.right-sec-text-header{
+    display: grid;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+.right-sec-text-para{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px rgb(199, 198, 198) solid;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: smaller;
+}
+
+.right-sec-text-para-last{
+    display: flex;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: smaller;
+}
+
+/* End of right section */
 
 .trending{
     background-color: white;
