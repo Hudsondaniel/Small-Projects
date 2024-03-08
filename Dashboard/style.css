@@ -107,6 +107,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 2em;
+    margin-bottom: 8px;
 }
 
 .main-icon{
@@ -158,6 +159,7 @@ body {
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 20px;
 
 }
 
@@ -179,11 +181,22 @@ body {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+}
 
+.Hudson-text{
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 .img{
-    padding-right: 30px;
+    padding-right: 20px;
+    width: 50px;
+}
+
+.profile1-pic{
+    width: 100%;
 }
 
 .search-bar-container{
@@ -232,10 +245,10 @@ body {
 .profile-buttons{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-
 }
 
 .profile{
@@ -245,8 +258,55 @@ body {
     justify-content: space-between;
 }
 
+.text-profile{
+    padding: 0px 20px 0px 20px;
+    font-family:"Josefin Sans", sans-serif; 
+    font-weight: bold;
+}
+
+.text-para{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button2, .button3{
+    padding-left: 60px;
+}
+
+button{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #2196f3;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: #1775e1; 
+    transition: background-color 0.3s ease;
+  }
+
 .img1{
-    width: 50px;
+    width: 60px;
+    
+}
+
+.profile2-pic{
+    width: 100%;
+    height: 100%;
+    
 }
 
 .text1{
@@ -365,10 +425,45 @@ body {
     font-size: smaller;
 }
 
-/* End of right section */
+/* Trending section */
 
 .trending{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
 }
+
+.trend-container1, .trend-container2, .trend-container3, .trend-container4{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+
+}
+
+.pic-trend1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.text-trend{
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: 20px;
+    font-size: small;
+}
+
+.text1-trend{
+    font-weight: bold;
+}
+
+/* End of right section */
+
