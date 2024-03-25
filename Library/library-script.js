@@ -1,8 +1,8 @@
 //Array to store data
 let library = [];
 
-let newBookButton = document.querySelector('#new-book-button');
-let newBookForm = document.querySelector('#new-book-form');
+let newBookButton = document.querySelector('.new-book-button');
+let newBookForm = document.querySelector('.new-book-form');
 newBookForm.style.display = 'none';
 
 //Activate the new book button

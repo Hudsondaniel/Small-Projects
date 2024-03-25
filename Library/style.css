@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+
+body{
+    background-color: #e5eaf5;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    padding: 30px 100px 30px 100px;
+    background-color: #494d5f;
+}
+
+.grid-new-book{
+    display: grid;
+    
+}
+
+.new-book-button{
+    color: #333;
+    background-color: #a0d2eb;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.2s ease-in-out; 
+    border-radius: 5px;
+}
+
+.new-book-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+.title{
+    color: white;
+}
+
+.body-content{
+    display: grid;
+    grid-template: 1fr;
+    background-color: #8458B3;
+}
