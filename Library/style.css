@@ -43,8 +43,78 @@ body{
     color: white;
 }
 
+
 .body-content{
     display: grid;
     grid-template: 1fr;
-    background-color: #8458B3;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color:white;
+    border: 10px solid #d0bdf4(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    box-shadow: 1px 10px 15px 6px rgba(20,20,20,0.4);
+  }
+
+input,
+select,
+textarea {
+  border: none;
+  background-color: rgba(223, 223, 223, 0.651);
+  border-radius: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font: 1rem / 1 "Playfair Display", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+
+input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.checkbox-container{
+    display: grid; 
+}
+
+h2{
+    color: rgba(71, 71, 71, 0.897);
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit-button{
+    color: #333;
+    background-color: #a0d2eb;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.2s ease-in-out; 
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+.submit-button-grid{
+    display: grid;
 }
