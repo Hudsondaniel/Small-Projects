@@ -3,7 +3,6 @@ let library = [];
 
 let newBookButton = document.querySelector('.new-book-button');
 let newBookForm = document.querySelector('.new-book-form');
-const newPage = document.getElementById("newPage");
 newBookForm.style.display = 'none';
 
 
@@ -13,7 +12,7 @@ newBookButton.addEventListener('click', () => {
  });
 
 //Submit button funciton to add new book to array
-document.querySelector('#submit-button').addEventListener('click', () => {
+document.querySelector('.submit-button').addEventListener('click', () => {
     event.preventDefault();
     addBook();
 });
