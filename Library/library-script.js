@@ -1,5 +1,6 @@
 //Array to store data
 let library = [];
+let bookCards = [];
 
 let newBookButton = document.querySelector('.new-book-button');
 let newBookForm = document.querySelector('.new-book-form');
@@ -48,18 +49,24 @@ function renderBook() {
         const [index, book] = element;
         let newBook = document.createElement('div');
         newBook.innerHTML = `
-        <div class="card-header">
-            <h3 class = "title"> ${book.title} </h3>
-            <h5 class = "author">${book.author}</h5>
-        </div>
-        <div class="card-body">
-             <p>${book.numberOfPages} pages</p>
-             <p class = "read-status">${book.read ? "read" : "Not read yet"} </p>
-             <button class ="remove-button" onClick ="removeBook(${index})"> Remove</button>
-             <button class = "toggle-read-button" onClick ="toggleRead(${index})">Toggle Read</button>`;
+        <div class="card-conatiner"> 
+            <div class="card-header">
+              <h3 class = "title-card"> ${book.title} </h3>
+              <h5 class = "author">${book.author}</h5>
+            </div>
+            <div class="card-body">
+               <p class="pages">${book.numberOfPages} pages Read</p>
+               <p class = "read-status">${book.read ? "Read" : "Not Read Yet"} </p>
+               <div class="buttons">
+                 <button class ="remove-button" onClick ="removeBook(${index})"> Remove</button>
+                 <button class = "toggle-read-button" onClick ="toggleRead(${index})">Toggle Read</button>
+                </div>
+            </div>
+        </div>`;
         libraryElement.appendChild(newBook);
     };  
 }
+
 
 //Object method to add new book to library
 function addBook() {

@@ -10,7 +10,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 100px 1fr 400px;
+    grid-template-rows: 100px 1fr 200px;
     background-color: #e5eaf5;
     
 }
@@ -55,6 +55,7 @@ body{
     grid-template-columns: 0.3fr 0.7fr;
     justify-content: center;
     padding-top: 50px;
+    padding-right: 30px;
 }
 
 form {
@@ -69,7 +70,7 @@ form {
     box-shadow: 1px 10px 15px 6px rgba(20,20,20,0.4);
     margin: 0px 50px;
 
-  }
+}
 
 input,
 select,
@@ -81,6 +82,7 @@ textarea {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
 select,
 textarea {
   font: 1rem / 1 "Playfair Display", sans-serif;
@@ -88,6 +90,7 @@ textarea {
   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem 0.75rem;
+text-align: center;
 }
 
 input[type="checkbox"] {
@@ -128,13 +131,93 @@ h2{
 }
 
 
-.book-cards{
+.library{
     display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 0.34fr 0.33fr 0.33fr;
+}
+
+.card-conatiner{
+    display: grid;
+    background-color: white;
+    margin: 0px 20px 10px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px 3px rgba(20,20,20,0.4);
 
 }
+
+.title-card{
+    color: black;
+    font-size: 30px;
+    padding: 10px 0px 10px;
+    text-align: center;
+}
+
+.author{
+    color: rgba(71, 71, 71, 0.897);
+    font-size: 20px;
+    text-align: center;
+}
+
+.pages{
+    color: rgb(12, 177, 0);
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+}
+
+.read-status{
+    color: rgba(201, 0, 0, 0.897);
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.buttons{
+    display: grid;
+    gap: 10px;
+    padding: 0px 30px 0px 30px;
+
+}
+
+.remove-button{
+    color: #333;
+    background-color: #eba0a0;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.2s ease-in-out; 
+    border-radius: 5px;
+}
+
+.remove-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+.toggle-read-button{
+    color: #333;
+    background-color: #eba0a0;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom:10px ;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.2s ease-in-out; 
+    border-radius: 5px;
+}
+
+.toggle-read-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
 
 footer{
     margin-top: 100px;
     background-color: #494d5f;
     box-shadow: 1px 0px 15px 3px rgba(20,20,20,0.4);
 }
+
