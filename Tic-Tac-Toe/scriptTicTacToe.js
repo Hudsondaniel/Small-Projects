@@ -3,20 +3,28 @@
 
 const gameBoard = ( () => {
     //Array of gameboard
-    let gameBoard = ["", "", "", "", "", "", "", ""," "];
-    
+    let gameBoard = ["", "", "", "", "", "", "", "",""];
+
     const render = () => {
         let boardHtml = "";
         gameBoard.forEach((square, index) => {
-            boardHtml += `<div class="square" id="${index}">${square}</div>`;
+            boardHtml += `<div class="square-container"><div class="square" id="${index}">${square}</div></div>`;
         })
         document.querySelector('.gameBoard').innerHTML = boardHtml;
+        const square = document.querySelectorAll(".square");
+        console.log(square);
+        square.forEach((square) => {
+            square.addEventListener('click', game.handleClick);
+        })
     }
     
     return {
         render,
     }
+ 
+
 })();
+
 
 const createPlayer = (name, mark) => {
     return {
@@ -25,25 +33,26 @@ const createPlayer = (name, mark) => {
     }
 }
 
+
 const game = (() => {
 
-    let players = [];
-    let currentPlayerIndex;
-    let gameOver;
-
     const start = () => {
-        players = [ createPlayer(document.querySelector('.player1').value, 'X'), 
+        let players = [ createPlayer(document.querySelector('.player1').value, 'X'), 
         createPlayer(document.querySelector('.player2').value,'O')];
-        currentPlayerIndex = 0;
-        gameOver = false;
-        gameBoard.render();
-       
+        let currentPlayerIndex = 0;
+        let gameOver = false;
+        gameBoard.render();  
+    }
+
+    const handleClick = () => {
+        alert('Hello world');
     }
 
     return{
         start,
+        handleClick,
     }
-
+  
 })();
 
 

@@ -1,8 +1,22 @@
-.square{
+body{
+    margin:0;
+    padding:0;
+}
+
+.gameBoard{
     display: grid;
     grid-template-rows: 0.4fr 0.4fr 0.2fr;
     grid-template-columns: 0.4fr 0.4fr 0.2fr; 
-    border: 1px;
-    border-style: solid;
-    border-color: black;
+    
+}
+
+.square-container{
+    display: grid;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.square{
+    display: grid;
+    padding: 10px;
 }
