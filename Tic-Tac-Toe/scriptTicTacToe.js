@@ -98,7 +98,10 @@ function checkForWin(board){
     return false;
 }
 
-f
+function checkForTie(board){
+
+    return board.every(cell => cell !== "")
+}
 
 
 const startButton = document.querySelector('.start-button');
