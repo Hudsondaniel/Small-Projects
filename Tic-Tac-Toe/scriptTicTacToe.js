@@ -1,6 +1,15 @@
 //The whole concept of the project is to implement modules. To think of one thing requiring one 
 //f you only need a single instance of something (e.g. the gameboard, the displayController etc.) then wrap the factory inside an IIFE (module pattern) so it cannot be reused to create additional instances.
 
+const displayController = (() => {
+    const renderMessage = (message) =>{
+        document.querySelector(".message").innerHTML = message;
+    }
+    return{
+        renderMessage,
+    }
+})();
+
 const gameBoard = ( () => {
     //Array of gameboard
     let gameBoard = ["", "", "", "", "", "", "", "",""];
@@ -55,6 +64,10 @@ const game = (() => {
     }
 
     const handleClick = (event) => {
+        if(gameOver) {
+            return;
+        };
+
         let index = parseInt(event.target.id);
         
         if(gameBoard.getGameBoard()[index] !== "")
@@ -64,10 +77,10 @@ const game = (() => {
         if(checkForWin(gameBoard.getGameBoard(), players[currentPlayerIndex].mark))
         {
             gameOver = true;
-            alert(`${players[currentPlayerIndex].name} won!`)
+            displayController.renderMessage(`${players[currentPlayerIndex].name} won!`);
         } else if(checkForTie(gameBoard.getGameBoard())){
             gameOver = true;
-            alert("It's a tie!")
+            displayController.renderMessage("It's a tie!");
         }
         currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
     }
@@ -76,6 +89,7 @@ const game = (() => {
         for (let i = 0; i < 9; i++)
            {gameBoard.update(i, "");}
         gameBoard.render();
+        document.querySelector(".message").innerHTML = "";
     }
 
     return{
