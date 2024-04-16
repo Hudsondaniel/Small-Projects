@@ -17,8 +17,12 @@ body{
 }
 
 .game-content{
-    background-color: white;
     padding:25px 50px 100px 50px;
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: blur(8px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgb(228 228 228 / 15%); 
+    border-radius: 20px;
 }
 
 .game-body{
@@ -28,8 +32,21 @@ body{
 
 .gameBoard{
     display: grid;
-    grid-template-rows: 0.4fr 0.4fr 0.2fr;
-    grid-template-columns: 0.4fr 0.4fr 0.2fr; 
+    grid-template-rows: 0.4fr 0.4fr 0.4fr;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr; 
+    
+}
+
+.game-tile{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.player1, .player2{
+    display: grid;
+    align-items: center;
+    padding-left: 30px;
     
 }
 
