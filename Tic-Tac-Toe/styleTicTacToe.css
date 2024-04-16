@@ -2,16 +2,28 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
-}
-
-.Backgroung-Image{
-    display: grid;
-    justify-content: center;
     background-image: url("./img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.game-content, .game-content-card, .game-body{
+    display: grid;
+    justify-content: center;
     
+}
+.game-content-card{
+    margin-top: 150px;
+}
+
+.game-content{
+    background-color: white;
+    padding:25px 50px 100px 50px;
+}
+
+.game-body{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
 .gameBoard{
