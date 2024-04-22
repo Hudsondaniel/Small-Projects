@@ -31,6 +31,12 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
+}
+
+.cell.x,
+.cell.circle{
+    cursor: not-allowed;
 }
 
 .cell:first-child,.cell:nth-child(2), .cell:nth-child(3){
@@ -69,8 +75,18 @@ body{
 .cell.circle::before,
 .cell.circle::after{
     content: '';
-    width: var(--mark-size);
     position: absolute;
-    height: var(--mark-size);
+    border-radius: 50% ;
     background-color: black;
+}
+
+.cell.circle::before{
+    width: var(--mark-size);
+    height: var(--mark-size);
+}
+
+.cell.circle::after{
+    width: calc(var(--mark-size) * .7);
+    height: calc(var(--mark-size) * .7);
+    background-color: white;
 }
