@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh; 
+    background-color:hsl(37, 80%, 94%); ;
 }
 
 /* Design for the app begins here */
@@ -11,25 +12,29 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #a6dab9;
+    background-color: hsl(37, 80%, 94%);
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .Home-button, .Menu-button{
 
-    margin-right: 150px;
+    margin-right: 100px;
     
+}
+
+.order-online{
+    margin-left: 150px;
 }
 
 footer {
     position: fixed;
     display: flex;
     justify-content: center;
-    padding: 10px 10px 30px 10px;
+    padding: 5px 10px 5px 10px;
     bottom: 0;
     width: 100%;
     height: 40px;
-    background: rgb(216, 255, 231);
+    background: hsl(175, 94%, 21%);;
     color: white;
 }
