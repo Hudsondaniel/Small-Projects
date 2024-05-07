@@ -1,7 +1,18 @@
+.outerDiv,
+.first-Container,
+.second-Container,
+.third-Container,
+.fourth-Container,
+.fifth-Container {
+  padding: 0;
+  margin: 0;
+  border: none; /* Remove any borders if accidentally set */
+  line-height: 1; /* Optional: Set line-height to match font size */
+}
+
 .outerDiv{
     display: grid;
     background-color: white;
-    grid-template-rows: repeat(5, 1fr);
 }
 
 .first-Container{
@@ -24,4 +35,36 @@
     height: 800px;
     background-size: cover;
     border-radius: 30px;
+}
+
+/* Second container Styling */
+
+.second-Container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-Container-LettersDiv{
+    padding-top: 0px;
+}
+
+.second-Container-PicDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.carousal-Pic{
+    display: inline-block; /* Display images inline for rows */
+    margin: 5px; /* Add some margin between images */
+    width: 40%; /* Set width for each image (adjust as needed) */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.carousal-Img{
+    
+    width: 100%; /* Image fills the width of its container (.carousal-Pic) */
+    height: auto;
 }
