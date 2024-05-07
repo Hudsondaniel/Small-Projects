@@ -1,6 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     min-height: 100vh; 
     background-color:hsl(37, 80%, 94%); ;
 }
@@ -12,9 +17,13 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: hsl(37, 80%, 94%);
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .Home-button, .Menu-button{
@@ -28,7 +37,6 @@ nav{
 }
 
 footer {
-    position: fixed;
     display: flex;
     justify-content: center;
     padding: 5px 10px 5px 10px;

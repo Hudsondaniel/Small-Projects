@@ -6,20 +6,22 @@
 
 .first-Container{
     display: grid;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     
 }
 
-.first-Container-ImgDiv{
-    border: 1px solid;
-    border-color: black;
-    padding: 30px 0px 30px 0px;
+.first-Container-ImgDiv {
+    border:none;
+    border-radius: 30px;
+    margin: 100px 30px 0px 30px;
+    
 }
-
-.first-Container-Image{
-    width: 70%; /* Make image fill the width of the div */
-    height: auto; /* Maintain image aspect ratio */
-    position: relative; /* Optional: allows positioning within the div */
-    top: 50%; /* Optional: center the image vertically */
-    transform: translateY(-50%); /* Optional: fine-tune vertical centering */
+  
+.first-Container-Image {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    border-radius: 30px;
 }
