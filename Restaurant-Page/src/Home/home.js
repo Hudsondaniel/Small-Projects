@@ -39,6 +39,7 @@ function homePage() {
     firstContainerImage.setAttribute('src', coverImg);
     firstContainerImgDiv.appendChild(firstContainerImage);
     
+    //
     
 }
 
