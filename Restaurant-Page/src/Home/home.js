@@ -1,4 +1,10 @@
 import coverImg from '../Assets/cover-pic.jpg';
+import pic1 from '../Assets/Carousal-Img/pic1.jpg';
+import pic2 from '../Assets/Carousal-Img/pic2.jpg';
+import pic3 from '../Assets/Carousal-Img/pic3.jpg';
+import pic4 from '../Assets/Carousal-Img/pic4.jpg';
+import pic5 from '../Assets/Carousal-Img/pic5.jpg';
+import pic6 from '../Assets/Carousal-Img/pic6.jpg'; 
 
 function homePage() {
     //Main div for the whole homepage
@@ -59,31 +65,55 @@ function homePage() {
     secondContainerPicDiv.classList.add('second-Container-PicDiv');
     secondContainer.appendChild(secondContainerPicDiv);
 
-    //Adding 6 containers for pics carousal 
+    //Adding 6 containers for pics carousal  -- This code could very well be done with a for loop but eh. Its fine.
 
     const firstPic = document.createElement('div');
     firstPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(firstPic);
     const img1 = document.createElement('img');
     img1.classList.add('carousal-Img');
-    img1.setAttribute('src', 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    img1.setAttribute('src', pic1);
     firstPic.appendChild(img1);
     
     const secondPic = document.createElement('div');
     secondPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(secondPic);
+    const img2 = document.createElement('img');
+    img2.classList.add('carousal-Img');
+    img2.setAttribute('src', pic2);
+    secondPic.appendChild(img2);
+
     const thirdPic = document.createElement('div');
     thirdPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(thirdPic);
+    const img3 = document.createElement('img');
+    img3.classList.add('carousal-Img');
+    img3.setAttribute('src', pic3);
+    thirdPic.appendChild(img3);
+
     const fourthPic = document.createElement('div');
     fourthPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(fourthPic);
+    const img4 = document.createElement('img');
+    img4.classList.add('carousal-Img');
+    img4.setAttribute('src', pic4);
+    fourthPic.appendChild(img4);
+
     const fifthPic = document.createElement('div');
     fifthPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(fifthPic);
+    const img5 = document.createElement('img');
+    img5.classList.add('carousal-Img');
+    img5.setAttribute('src', pic5);
+    fifthPic.appendChild(img5);
+
     const sixthPic = document.createElement('div');
     sixthPic.classList.add('carousal-Pic');
     secondContainerPicDiv.appendChild(sixthPic);
+    const img6 = document.createElement('img');
+    img6.classList.add('carousal-Img');
+    img6.setAttribute('src', pic6);
+    sixthPic.appendChild(img6);
 
 }
 
