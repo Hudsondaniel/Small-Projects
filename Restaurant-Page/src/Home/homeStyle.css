@@ -48,7 +48,7 @@
 
 .second-Container-LettersDiv{
     display: grid;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 70px 0px;
     justify-content: center;
 }
 
@@ -56,21 +56,26 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
     padding: 0px 30px 50px 30px;
+    justify-content: center;
 }
 
 .carousal-Pic{
-    display: inline-block; 
-    margin: 5px; 
-    width: 40%; 
-    height: auto; 
-
+    display: grid; 
+    width: 500px;
+    height: 300px;
 }
 
 .carousal-Img{
     
-    width: 100%; 
-    height: auto;
+    width: 100%;  /* Images fit the width of their container cells */
+    height: 100%;  /* Maintain image aspect ratio */
+    object-fit: cover;  /* Resize images to cover container while maintaining aspect ratio */
+    display: block;  /* Remove default inline behavior for proper centering */
+    margin: 0 auto;  
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .second-div-title{
@@ -80,4 +85,21 @@
     padding-bottom: 20px;
     font-size: 50px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.third-Container{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0px 30px 50px 30px;
+    border-radius: 30px;
+}
+
+.menu-Container{
+    
+}
+
+.menu-Pic-Container{
+
 }
