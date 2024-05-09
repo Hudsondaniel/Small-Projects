@@ -5,7 +5,7 @@ import pic3 from '../Assets/Carousal-Img/pic3.jpg';
 import pic4 from '../Assets/Carousal-Img/pic4.jpg';
 import pic5 from '../Assets/Carousal-Img/pic5.jpg';
 import pic6 from '../Assets/Carousal-Img/pic6.jpg'; 
-import menuPic from '../Assets/Menu-pic.jpg';
+import menuPicture from '../Assets/Menu-pic.jpg';
 
 function homePage() {
     //Main div for the whole homepage
@@ -116,15 +116,16 @@ function homePage() {
     img6.setAttribute('src', pic6);
     sixthPic.appendChild(img6);
 
-    //The last container of homepage
+    //last container of homepage
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-Container');
     thirdContainer.appendChild(menuContainer);
     const menuPic = document.createElement('img');
     menuPic.classList.add('menu-Pic');
-    menuPic.setAttribute('src', '../Assets/menu-pic.jpg');
+    menuPic.setAttribute('src', menuPicture);
     menuContainer.appendChild(menuPic);
+    
 
     const menuPicContainer = document.createElement('div');
     menuPicContainer.classList.add('menu-Pic-Container');
