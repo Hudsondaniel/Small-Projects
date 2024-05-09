@@ -49,7 +49,7 @@ function homePage() {
     const subheader = document.createElement('h3');
     title.textContent = 'KOREAN BOWL & BOA';
     title.classList.add('second-div-title');
-    subheader.textContent = 'We cook up bright, bold, and unique korean bowls. And we serve it all hot, fast';
+    subheader.textContent = 'We cook up bright, bold, and unique korean bowls. And we serve it all hot & fast';
     secondContainerLettersDiv.append(title);
     secondContainerLettersDiv.appendChild(subheader);
 
