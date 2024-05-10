@@ -101,15 +101,13 @@
     border-radius: 30px;
 }
 
-.menu-Container{
+.menu-Container, .fourth-Container-Text, .fourth-Container-Pic{
     display: grid;
     height: 500px;
 
 }
 
 .menu-Pic{
-
-    
     width: 100%;  
     height: 100%;  
     object-fit: cover;  
@@ -121,7 +119,7 @@
     
 }
 
-.fourth-Container-Pic{
+.fourth-Container-Pic-Img{
     width: 100%;  
     height: 100%;  
     object-fit: cover;  
