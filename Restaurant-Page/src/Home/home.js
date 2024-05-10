@@ -21,8 +21,6 @@ function homePage() {
     thirdContainer.classList.add('third-Container');
     const fourthContainer = document.createElement('div');
     fourthContainer.classList.add('fourth-Container');
-    const fifthContainer = document.createElement('div');
-    fifthContainer.classList.add('fifth-Container');
 
     //Implementing five containers within the outerdiv
 
