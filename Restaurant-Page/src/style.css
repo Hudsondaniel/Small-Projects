@@ -25,24 +25,50 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: hsl(37, 80%, 94%);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 
-.Home-button, .Menu-button{
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 
+ul{
+    list-style-type: none;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+.Home-button, .Menu-button, .About-button{
+    border: none;
+    background-color: hsl(37, 80%, 94%);
+    font-size: 18px;
     margin-right: 100px;
     
 }
 
 .order-online{
-    margin-left: 150px;
+    border: 2px solid rgb(15, 51, 1);
+    padding: 5px 10px 5px 10px; 
+    background-color: orange;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.order-online:hover{
+    background-color: rgb(255, 255, 255); 
 }
 
 footer {
