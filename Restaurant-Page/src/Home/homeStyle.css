@@ -90,9 +90,9 @@
                 -1px -1px 0 #000;
 }
 
-/* Last container */
+/* Third & fourth container */
 
-.third-Container{
+.third-Container, .fourth-Container{
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
     height: 500px;
@@ -116,9 +116,20 @@
     display: block; 
     margin: 0 auto;  
     overflow: hidden;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     
+}
+
+.fourth-Container-Pic{
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    display: block; 
+    margin: 0 auto;  
+    overflow: hidden;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .menu-Pic-Container{
@@ -127,17 +138,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color:rgb(255, 224, 124);
 
 }
 
-.menu-Title{
+.fourth-Container-Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:rgb(78, 219, 172);
+}
+
+.menu-Title, .fourth-Container-Title{
     color: orange;
     text-shadow: -1px 5px 0 #000,
                 1px 1px 0 #000,
                 1px -1px 0 #000,
                 -1px -1px 0 #000;
     font-size: 50px;
+    padding-bottom: 40px;
+    
 }
+
+.menu-Text, .fourth-Container-Subheader{
+    padding-bottom: 40px;
+    
+}
+
+.menu-Button, .fourth-Container-Button{
+    background-color: orange;
+    padding: 10px 60px 10px 60px;
+    font-size: 15px;
+    border: 3px solid rgb(15, 51, 1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-Button:hover , .fourth-Container-Button:hover{
+
+    background-color: rgb(255, 255, 255); 
+    }

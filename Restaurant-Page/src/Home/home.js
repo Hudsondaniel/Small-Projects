@@ -6,6 +6,7 @@ import pic4 from '../Assets/Carousal-Img/pic4.jpg';
 import pic5 from '../Assets/Carousal-Img/pic5.jpg';
 import pic6 from '../Assets/Carousal-Img/pic6.jpg'; 
 import menuPicture from '../Assets/Menu-pic.jpg';
+import shopPic from '../Assets/shop-pic.jpg';
 
 function homePage() {
     //Main div for the whole homepage
@@ -116,9 +117,9 @@ function homePage() {
     img6.setAttribute('src', pic6);
     sixthPic.appendChild(img6);
 
-    //last container of homepage
+    //Third container of homepage
 
-    //First part of the container
+    //First part of the third container
 
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-Container');
@@ -128,7 +129,7 @@ function homePage() {
     menuPic.setAttribute('src', menuPicture);
     menuContainer.appendChild(menuPic);
     
-    //Second part of the container
+    //Second part of the third container
 
     const menuPicContainer = document.createElement('div');
     menuPicContainer.classList.add('menu-Pic-Container');
@@ -149,7 +150,38 @@ function homePage() {
     menuButton.textContent = 'View Menu';
     menuPicContainer.appendChild(menuButton);
 
+    //Fourth container of the homepage
 
+    //First part of the container
+
+    const fourthContainerText = document.createElement('div');
+    fourthContainerText.classList.add('fourth-Container-Text');
+    fourthContainer.appendChild(fourthContainerText);
+
+    const fourthContainerTitle = document.createElement('h1');
+    fourthContainerTitle.classList.add('fourth-Container-Title');
+    fourthContainerTitle.textContent = 'SHOP';
+    fourthContainerText.appendChild(fourthContainerTitle);
+
+    const fourthContainerSubheader = document.createElement('h3');
+    fourthContainerSubheader.classList.add('fourth-Container-Subheader');
+    fourthContainerSubheader.textContent = 'Thank You For Spreading Disco Cheetah Love!';
+    fourthContainerText.appendChild(fourthContainerSubheader);
+    
+    const fourthContainerButton = document.createElement('button');
+    fourthContainerButton.classList.add('fourth-Container-Button');
+    fourthContainerButton.textContent = 'Shop Our Items';
+    fourthContainerText.appendChild(fourthContainerButton);
+
+    //Second part of the container
+
+    const fourthContainerPic = document.createElement('div');
+    fourthContainerPic.classList.add('fourth-Container-Pic');
+    fourthContainer.appendChild(fourthContainerPic);
+    const fourthContainerPicImg = document.createElement('img');
+    fourthContainerPicImg.classList.add('fourth-Container-Pic-Img');
+    fourthContainerPicImg.setAttribute('src', shopPic);
+    fourthContainerPic.appendChild(fourthContainerPicImg);
 }
 
 export {homePage}
