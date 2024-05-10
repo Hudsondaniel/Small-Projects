@@ -118,6 +118,8 @@ function homePage() {
 
     //last container of homepage
 
+    //First part of the container
+
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-Container');
     thirdContainer.appendChild(menuContainer);
@@ -126,10 +128,26 @@ function homePage() {
     menuPic.setAttribute('src', menuPicture);
     menuContainer.appendChild(menuPic);
     
+    //Second part of the container
 
     const menuPicContainer = document.createElement('div');
     menuPicContainer.classList.add('menu-Pic-Container');
     thirdContainer.appendChild(menuPicContainer);
+
+    const menuTitle = document.createElement('h1');
+    menuTitle.classList.add('menu-Title');
+    menuTitle.textContent = 'MENUS';
+    menuPicContainer.appendChild(menuTitle);
+
+    const menuText = document.createElement('h3');
+    menuText.classList.add('menu-Text');
+    menuText.textContent = 'Make Your Day Better with Real Food Fast!';
+    menuPicContainer.appendChild(menuText);
+
+    const menuButton = document.createElement('button');
+    menuButton.classList.add('menu-Button');
+    menuButton.textContent = 'View Menu';
+    menuPicContainer.appendChild(menuButton);
 
 
 }
