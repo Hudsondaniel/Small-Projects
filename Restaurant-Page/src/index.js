@@ -9,11 +9,11 @@ const homePageButton = document.querySelector('.Home-button');
 const contentDiv = document.getElementById('content');
 
 menuPage.addEventListener('click', () => {
-     contentDiv.innerHTML = '';
-
+    contentDiv.innerHTML = '';
 });
 
 homePageButton.addEventListener('click', () => {
+    contentDiv.innerHTML = '';
     const homePageContent = homePage();
     contentDiv.innerHTML = homePageContent;
 })
