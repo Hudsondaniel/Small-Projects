@@ -15,7 +15,7 @@ body{
     margin: 0px;
     padding: 0px;
     min-height: 100vh; 
-    background-color:hsl(140, 77%, 53%); 
+    background-color:hsl(0, 0%, 100%); 
 }
 
 /* Design for the app begins here */
