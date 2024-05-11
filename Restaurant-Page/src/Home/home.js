@@ -8,6 +8,7 @@ import pic6 from '../Assets/Carousal-Img/pic6.jpg';
 import menuPicture from '../Assets/Menu-pic.jpg';
 import shopPic from '../Assets/shop-pic.jpg';
 
+
 function homePage() {
     //Main div for the whole homepage
     

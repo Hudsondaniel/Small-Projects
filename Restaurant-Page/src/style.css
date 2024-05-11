@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -16,7 +15,7 @@ body{
     margin: 0px;
     padding: 0px;
     min-height: 100vh; 
-    background-color:hsl(37, 80%, 94%); ;
+    background-color:hsl(140, 77%, 53%); 
 }
 
 /* Design for the app begins here */
@@ -35,11 +34,48 @@ nav{
     
 }
 
+.Home-button, .menu-button, .about-button {
+    border: none;
+    background-color: hsl(37, 80%, 94%);
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 20px;
+}
+
+.Home-button::after, .menu-button::after, .about-button::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0; /* Initially hide the underline */
+    background: orange;
+    transition: width .2s;
+    /* transform-origin: bottom right; */  /* Uncomment to experiment */
+}
+  
+.Home-button:hover::after, .menu-button:hover::after, .about-button:hover::after {
+    width: 100%;
+}
+  
+
 .menu{
     display: flex;
     justify-content: space-evenly;
     
 }
+
+
+.menu li {
+    margin-right: 150px; 
+    list-style-type: none;
+  }
+  
+  .menu li:last-child { 
+    margin-right: 0;
+  }
+  
 
 ul{
     list-style-type: none;
@@ -49,12 +85,16 @@ nav a:hover{
     color: orange;
 }
 
-.Home-button, .Menu-button, .About-button{
-    border: none;
-    background-color: hsl(37, 80%, 94%);
+li{
+   
     font-size: 18px;
-    margin-right: 100px;
     
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    margin-left: 70px;
 }
 
 .order-online{
@@ -64,6 +104,7 @@ nav a:hover{
     font-size: 18px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    margin-right: 70px;
     
 }
 
