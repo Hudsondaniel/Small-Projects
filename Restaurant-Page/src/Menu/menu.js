@@ -22,8 +22,6 @@ menuTitleDiv.appendChild(titleFirstDiv);
 
 // Add content to menuContentDiv if needed
 
-
-
 }
 
 export {menuPage};
