@@ -34,6 +34,10 @@ nav{
     
 }
 
+.Home-button, .menu-button{
+    margin-right: 100px;
+}
+
 .Home-button, .menu-button, .about-button {
     border: none;
     background-color: hsl(37, 80%, 94%);
