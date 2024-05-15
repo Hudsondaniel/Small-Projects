@@ -24,4 +24,4 @@ menuTitleDiv.appendChild(titleFirstDiv);
 
 }
 
-export {menuPage};
+export default menuPage;

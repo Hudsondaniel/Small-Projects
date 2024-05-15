@@ -1,6 +1,6 @@
 
 function aboutPage(){
-    alert("Hello");
+   console.log("I am about page");
 }
 
-export default aboutPage();
+export  default aboutPage;

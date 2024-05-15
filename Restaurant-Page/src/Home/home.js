@@ -185,4 +185,4 @@ function homePage() {
     fourthContainerPic.appendChild(fourthContainerPicImg);
 }
 
-export {homePage}
+export default homePage;
