@@ -14,48 +14,24 @@ logoImg.src = logo;
 const header = document.querySelector('header');
 const headerNav = document.querySelector('nav');
 const headerNavBtns = document.querySelector('button');
-const homeBtn = document.querySelector('.Home-button');
-const menuBtn = document.querySelector('.menu-button');
-const aboutBtn = document.querySelector('.about-button');
+const homeBtn = document.getElementById('home');
+const menuBtn = document.getElementById('menu');
+const aboutBtn = document.getElementById('about');
 
 const content = document.querySelector('#content');
 
-function clearContent() {
-    while(content.hasChildNodes()) 
-        content.removeChild(content.lastChild);
+function clearElement(elementID) {
+    let  element = document.querySelector(elementID);
+    while(element.firstChild) {
+        element.removeChild(element.firstChild);
+    }
 }
 
-homePage();
-tabListener();
-
-function tabListener() {
-    const menuPageListener = document.querySelectorAll(".menu-button");
-    menuPageListener.forEach((item) => {
-        item.addEventListener("click", () => {
-            console.log("Menu Page Works");
-            clearContent();
-            menuPage();
-            tabListener();
-        });
+function handleHeaderNav() {
+    homePage();
+    homeBtn.classList.add("selected");
+    headerNavBtns.forEach(button => {
+        
     });
-
-    const homePageListener = document.querySelectorAll(".Home-button");
-    menuPageListener.forEach((item) => {
-        item.addEventListener("click", () => {
-            console.log("Home Page Works");
-            clearContent();
-            homePage();
-            tabListener();
-        });
-    });
-
-    const aboutPageListener = document.querySelectorAll(".about-button");
-    menuPageListener.forEach((item) => {
-        item.addEventListener("click", () => {
-            console.log("About Page Works");
-            clearContent();
-            aboutPage();
-            tabListener();
-        });
-    });
+    
 }
