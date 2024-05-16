@@ -3,7 +3,7 @@
     margin: 120px ;
 }
 
-.menu-one{
+.menu-one, .menu-two{
     display: grid;
     grid-template-rows: 80px 550px;
     border: 2px solid black;
@@ -11,14 +11,22 @@
     margin-bottom: 0;
 }
 
-.menu-one-title{
+.menu-one-title, .menu-two-title{
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 151, 16, 0.438);
     font-weight: bolder;
     font-size: 20px;
 }
+
+.menu-one-title{
+    background-color: rgba(255, 151, 16, 0.438);
+}
+
+.menu-two-title{
+    background-color: rgba(14, 187, 164, 0.555);
+}
+
 
 .menu-one-items{
     display: grid;

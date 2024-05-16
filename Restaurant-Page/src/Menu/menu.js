@@ -79,7 +79,39 @@ function menuPage() {
     firstText.textContent = 'All bowls are customizable. Please inquire with our staff for personalized options';
     menuDiv.appendChild(firstText);
 
+    //Second div for the menu
 
+    const menuTwoDiv = document.createElement('div');
+    menuTwoDiv.classList.add('menu-two');
+    menuDiv.appendChild(menuTwoDiv);
+
+    //Second div menu title sec
+    const menuTwoTitleDiv = document.createElement('div');
+    menuTwoTitleDiv.classList.add('menu-two-title');
+    menuTwoDiv.appendChild(menuTwoTitleDiv);
+    const titleH2 = document.createElement('h1');
+    titleH2.classList.add('menu-title-text');
+    titleH2.textContent = 'CUSTOM BOWL';
+    menuTwoTitleDiv.appendChild(titleH2);
+
+    //Second div for menu content
+    const menuTwoItemsDiv = document.createElement('div');
+    menuTwoItemsDiv.classList.add('menu-two-items');
+    menuTwoDiv.appendChild(menuTwoItemsDiv);
+
+    //Four grids to go within the menuTwoDiv
+
+    //First menu text content
+    const itemOneTwo = document.createElement('div');
+    itemOneTwo.classList.add('item-one-two');
+    menuTwoItemsDiv.appendChild(itemOneTwo);
+    const itemOneTwoDishHtml = document.createElement('div');
+    itemOneTwoDishHtml.innerHTML = `
+        <h2> 1. BUTTERMILK CRISPY CHICKEN RICE BOWL <span> $18.95 </span> </h2>
+        <p> Multigrin Rice, Coleslaw, Pickled Red Onion, Scallion </p>
+        <h4>- ORIGINAL : Garlic Ranch, Sweet Chili </h4>
+        `;
+    itemOneTwo.appendChild(itemOneTwoDishHtml);
 }
 
 
