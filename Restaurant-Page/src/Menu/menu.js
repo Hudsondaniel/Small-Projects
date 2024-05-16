@@ -74,6 +74,12 @@ function menuPage() {
         <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
     itemFour.appendChild(itemFourDishHtml);
 
+    const firstText = document.createElement('div');
+    firstText.classList.add('first-text');
+    firstText.textContent = 'All bowls are customizable. Please inquire with our staff for personalized options';
+    menuDiv.appendChild(firstText);
+
+
 }
 
 
