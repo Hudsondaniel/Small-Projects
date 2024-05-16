@@ -64,3 +64,8 @@ span{
     font-size: medium;
     background-color: rgba(255, 166, 0, 0.329);
 }
+
+.menu-two-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -101,17 +101,20 @@ function menuPage() {
 
     //Four grids to go within the menuTwoDiv
 
+    const firsColumnDiv = document.createElement('div');
+    firsColumnDiv.classList.add('firs-column');
+    menuTwoItemsDiv.appendChild(firsColumnDiv);
+
+    const secondColumnDiv = document.createElement('div');
+    secondColumnDiv.classList.add('second-column');
+    menuTwoItemsDiv.appendChild(secondColumnDiv);
+
+    const thirdColumnDiv = document.createElement('div');
+    thirdColumnDiv.classList.add('third-column');
+    menuTwoItemsDiv.appendChild(thirdColumnDiv);
+
     //First menu text content
-    const itemOneTwo = document.createElement('div');
-    itemOneTwo.classList.add('item-one-two');
-    menuTwoItemsDiv.appendChild(itemOneTwo);
-    const itemOneTwoDishHtml = document.createElement('div');
-    itemOneTwoDishHtml.innerHTML = `
-        <h2> 1. BUTTERMILK CRISPY CHICKEN RICE BOWL <span> $18.95 </span> </h2>
-        <p> Multigrin Rice, Coleslaw, Pickled Red Onion, Scallion </p>
-        <h4>- ORIGINAL : Garlic Ranch, Sweet Chili </h4>
-        `;
-    itemOneTwo.appendChild(itemOneTwoDishHtml);
+    
 }
 
 
