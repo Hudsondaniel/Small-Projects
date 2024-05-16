@@ -114,6 +114,10 @@ function menuPage() {
     menuTwoItemsDiv.appendChild(thirdColumnDiv);
 
     //First menu text content
+
+    //First menu text content
+    const firstTextContent = document.createElement('div');
+    
     
 }
 
