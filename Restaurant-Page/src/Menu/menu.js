@@ -5,27 +5,32 @@ function menuPage() {
 
     // First div for the menu
     const menuDiv = document.createElement('div');
-    menuDiv.classList.add('menu-container'); // More descriptive class name
+    menuDiv.classList.add('menu-container'); 
     contentDiv.appendChild(menuDiv);
-  
-    // Menu title section
-    const menuTitleDiv = document.createElement('div');
-    menuTitleDiv.classList.add('menu-title');
-    menuDiv.appendChild(menuTitleDiv);
-  
+
+    // Need three divs for the menu
+    
+    //First div for the menu
+
+    const menuOneDiv = document.createElement('div');
+    menuOneDiv.classList.add('menu-one');
+    menuDiv.appendChild(menuOneDiv);
+
+    // Menu title sec
+    const menuOneTitleDiv = document.createElement('div');
+    menuOneTitleDiv.classList.add('menu-one-title');
+    menuOneDiv.appendChild(menuOneTitleDiv);
+
     const titleH1 = document.createElement('h1');
     titleH1.classList.add('menu-title-text');
     titleH1.textContent = 'SIGNATURE BOWL';
-    menuTitleDiv.appendChild(titleH1);
-  
-    // Menu items section (replace with your menu item creation logic)
+    menuOneTitleDiv.appendChild(titleH1);
+
     const menuItemsDiv = document.createElement('div');
     menuItemsDiv.classList.add('menu-items');
     menuDiv.appendChild(menuItemsDiv);
-  
-    // Here you would add logic to create elements for each menu item
-    // (e.g., name, description, price, image) and append them to menuItemsDiv
-  }
-  
+
+}
+
 
 export default menuPage;
