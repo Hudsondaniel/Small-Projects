@@ -1,0 +1,7 @@
+.menu-container{
+    display: grid;
+    margin-top: 100px;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+}
+
