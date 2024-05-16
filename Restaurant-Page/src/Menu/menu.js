@@ -36,6 +36,13 @@ function menuPage() {
     itemOne.classList.add('item-one');
     menuOneItemsDiv.appendChild(itemOne);
 
+    //First menu text content
+    const itemOneDishName = document.createElement('h2');
+    itemOneDishName.classList.add('item-one-dish-name');
+    itemOneDishName.textContent = '1. BUTTERMILK CRISPY CHICKEN RICE BOWL $18.95';
+    itemOne.appendChild(itemOneDishName);
+
+
     const itemTwo = document.createElement('div');
     itemTwo.classList.add('item-two');
     menuOneItemsDiv.appendChild(itemTwo);

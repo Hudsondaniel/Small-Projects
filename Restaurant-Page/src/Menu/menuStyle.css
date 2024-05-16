@@ -1,7 +1,27 @@
 .menu-container{
     display: grid;
-    margin-top: 100px;
+    margin: 120px ;
     grid-template-rows: 1fr;
     min-height: 100vh;
+    min-width: 100vh; 
 }
 
+.menu-one{
+    display: grid;
+    grid-template-rows: 80px auto;
+    border: 2px solid black;
+}
+
+.menu-one-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 151, 16, 0.438);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.menu-one-items{
+    display: grid;
+    grid-template-rows: auto;
+}
