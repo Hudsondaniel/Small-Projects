@@ -23,5 +23,10 @@
 
 .menu-one-items{
     display: grid;
-    grid-template-rows: auto;
+
+    margin: 40px 0px 0px 30px;
+}
+
+h2{
+    
 }

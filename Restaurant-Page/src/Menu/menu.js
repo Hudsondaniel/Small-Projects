@@ -31,30 +31,48 @@ function menuPage() {
     menuOneDiv.appendChild(menuOneItemsDiv);
 
     //Four grids to go within the menuOneDiv
-
+    
+    //First menu text content
     const itemOne = document.createElement('div');
     itemOne.classList.add('item-one');
     menuOneItemsDiv.appendChild(itemOne);
-
-    //First menu text content
-    const itemOneDishName = document.createElement('h2');
-    itemOneDishName.classList.add('item-one-dish-name');
-    itemOneDishName.textContent = '1. BUTTERMILK CRISPY CHICKEN RICE BOWL $18.95';
-    itemOne.appendChild(itemOneDishName);
-
-
+    const itemOneDishHtml = document.createElement('div');
+    itemOneDishHtml.innerHTML = `
+        <h2> 1. BUTTERMILK CRISPY CHICKEN RICE BOWL $18.95 </h2>
+        <p> Multigrin Rice, Coleslaw, Pickled Red Onion, Scallion </p>
+        <h4>- ORIGINAL : Garlic Ranch, Sweet Chili </h4>
+        <h4>- SOY VINAIGRETTE + $ 1.00 : Sesame Seed, Garlic Ranch </h4>
+        <h4>- CHILLI PEPPERCORN + $ 2.00 : Crispy Sahllot, Chilli Chilli </h4>`;
+    itemOne.appendChild(itemOneDishHtml);
+    
+    //Second menu text content
     const itemTwo = document.createElement('div');
     itemTwo.classList.add('item-two');
     menuOneItemsDiv.appendChild(itemTwo);
+    const itemTwoDishHtml = document.createElement('div');
+    itemTwoDishHtml.innerHTML = `
+        <h2>2. BULGOGI BEEF RICE BOWL $19.95</h2>
+        <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
+    itemTwo.appendChild(itemTwoDishHtml);
+    
 
     const itemThree = document.createElement('div');
     itemThree.classList.add('item-three');
     menuOneItemsDiv.appendChild(itemThree);
+    const itemThreeDishHtml = document.createElement('div');
+    itemThreeDishHtml.innerHTML = `
+        <h2>3. SPICY PORK KIMCHI RICE BOWL $18.95</h2>
+        <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
+    itemThree.appendChild(itemThreeDishHtml);
 
     const itemFour = document.createElement('div');
     itemFour.classList.add('item-four');
     menuOneItemsDiv.appendChild(itemFour);
-
+    const itemFourDishHtml = document.createElement('div');
+    itemFourDishHtml.innerHTML = `
+        <h2>4. BBQ CHICKEN RICE BOWL $18.95</h2>
+        <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
+    itemFour.appendChild(itemFourDishHtml);
 
 }
 
