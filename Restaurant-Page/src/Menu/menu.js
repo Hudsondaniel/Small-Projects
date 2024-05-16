@@ -38,7 +38,7 @@ function menuPage() {
     menuOneItemsDiv.appendChild(itemOne);
     const itemOneDishHtml = document.createElement('div');
     itemOneDishHtml.innerHTML = `
-        <h2> 1. BUTTERMILK CRISPY CHICKEN RICE BOWL $18.95 </h2>
+        <h2> 1. BUTTERMILK CRISPY CHICKEN RICE BOWL <span> $18.95 </span> </h2>
         <p> Multigrin Rice, Coleslaw, Pickled Red Onion, Scallion </p>
         <h4>- ORIGINAL : Garlic Ranch, Sweet Chili </h4>
         <h4>- SOY VINAIGRETTE + $ 1.00 : Sesame Seed, Garlic Ranch </h4>
@@ -51,7 +51,7 @@ function menuPage() {
     menuOneItemsDiv.appendChild(itemTwo);
     const itemTwoDishHtml = document.createElement('div');
     itemTwoDishHtml.innerHTML = `
-        <h2>2. BULGOGI BEEF RICE BOWL $19.95</h2>
+        <h2>2. BULGOGI BEEF RICE BOWL <span> $19.95 </span></h2>
         <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
     itemTwo.appendChild(itemTwoDishHtml);
     
@@ -61,7 +61,7 @@ function menuPage() {
     menuOneItemsDiv.appendChild(itemThree);
     const itemThreeDishHtml = document.createElement('div');
     itemThreeDishHtml.innerHTML = `
-        <h2>3. SPICY PORK KIMCHI RICE BOWL $18.95</h2>
+        <h2>3. SPICY PORK KIMCHI RICE BOWL <span> $18.95 </span></h2>
         <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
     itemThree.appendChild(itemThreeDishHtml);
 
@@ -70,7 +70,7 @@ function menuPage() {
     menuOneItemsDiv.appendChild(itemFour);
     const itemFourDishHtml = document.createElement('div');
     itemFourDishHtml.innerHTML = `
-        <h2>4. BBQ CHICKEN RICE BOWL $18.95</h2>
+        <h2>4. BBQ CHICKEN RICE BOWL <span> $18.95 </span></h2>
         <p>Multigrin Rice, Green Salad, Poached Egg, Smashed Potato, Pickled red cabbaage, Scallion, Crispy shallot, Garlic ranch, Sweet Chill</p>`;
     itemFour.appendChild(itemFourDishHtml);
 
