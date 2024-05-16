@@ -9,26 +9,45 @@ function menuPage() {
     contentDiv.appendChild(menuDiv);
 
     // Need three divs for the menu
-    
+
     //First div for the menu
 
     const menuOneDiv = document.createElement('div');
     menuOneDiv.classList.add('menu-one');
     menuDiv.appendChild(menuOneDiv);
 
-    // Menu title sec
+    // First div Menu title sec
     const menuOneTitleDiv = document.createElement('div');
     menuOneTitleDiv.classList.add('menu-one-title');
     menuOneDiv.appendChild(menuOneTitleDiv);
-
     const titleH1 = document.createElement('h1');
     titleH1.classList.add('menu-title-text');
     titleH1.textContent = 'SIGNATURE BOWL';
     menuOneTitleDiv.appendChild(titleH1);
 
-    const menuItemsDiv = document.createElement('div');
-    menuItemsDiv.classList.add('menu-items');
-    menuDiv.appendChild(menuItemsDiv);
+    //Second div for menu content
+    const menuOneItemsDiv = document.createElement('div');
+    menuOneItemsDiv.classList.add('menu-one-items');
+    menuOneDiv.appendChild(menuOneItemsDiv);
+
+    //Four grids to go within the menuOneDiv
+
+    const itemOne = document.createElement('div');
+    itemOne.classList.add('item-one');
+    menuOneItemsDiv.appendChild(itemOne);
+
+    const itemTwo = document.createElement('div');
+    itemTwo.classList.add('item-two');
+    menuOneItemsDiv.appendChild(itemTwo);
+
+    const itemThree = document.createElement('div');
+    itemThree.classList.add('item-three');
+    menuOneItemsDiv.appendChild(itemThree);
+
+    const itemFour = document.createElement('div');
+    itemFour.classList.add('item-four');
+    menuOneItemsDiv.appendChild(itemFour);
+
 
 }
 
