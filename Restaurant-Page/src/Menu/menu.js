@@ -199,7 +199,27 @@ function menuPage() {
     const firstDivFourth = document.createElement('div');
     firstDivFourth.classList.add('first-div-fourth');
     outerDiv.appendChild(firstDivFourth);
-    
+    const secondDivFourth = document.createElement('div');
+    secondDivFourth.classList.add('second-div-fourth');
+    outerDiv.appendChild(secondDivFourth);
+
+    //Title for the two divs
+    const firstInnerDiv = document.createElement('h1');
+    firstInnerDiv.classList.add('first-inner-div');
+    firstDivFourth.appendChild(firstInnerDiv);
+    const firstInnerDivtText = document.createElement('h1');
+    firstInnerDivtText.classList.add('first-inner-div-text');
+    firstInnerDiv.appendChild(firstInnerDivtText);
+    firstInnerDivtText.textContent = 'BAO';
+
+    //Title for second div
+    const secondInnerDiv = document.createElement('h1');
+    secondInnerDiv.classList.add('second-inner-div');
+    secondDivFourth.appendChild(secondInnerDiv);
+    const secondInnerDivtText = document.createElement('h1');
+    secondInnerDivtText.classList.add('second-inner-div-text');
+    secondInnerDiv.appendChild(secondInnerDivtText);
+    secondInnerDivtText.textContent = 'SIDE';
     
 }
 

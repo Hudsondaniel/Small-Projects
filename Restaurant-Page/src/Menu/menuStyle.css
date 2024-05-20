@@ -152,3 +152,21 @@ span{
     font-size: medium;
     background-color: rgba(17, 153, 135, 0.308);
 }
+
+.outer-div-fouth-container-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.first-inner-div-text, .second-inner-div-text{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    
+}
+
+.first-inner-div, .second-inner-div{
+    border: 2px solid black;
+}
