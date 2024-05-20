@@ -102,7 +102,7 @@ function menuPage() {
     //Four grids to go within the menuTwoDiv
 
     const firsColumnDiv = document.createElement('div');
-    firsColumnDiv.classList.add('firs-column');
+    firsColumnDiv.classList.add('first-column');
     menuTwoItemsDiv.appendChild(firsColumnDiv);
 
     const secondColumnDiv = document.createElement('div');
@@ -115,18 +115,37 @@ function menuPage() {
 
     //First menu text content
 
-    //First menu text content
+    //First item in cutom bowl
     const firstTextContent = document.createElement('div');
     firstTextContent.classList.add('first-text-content');
     firstTextContent.innerHTML = ` 
         <h2 class = "custom-bowl-heading-one">1. Choose Your Base </h2>
         <ul class = "ul-cutom-bowl-one">
-            <li>Multigrain Rice w/ Scallion</li>
-            <li>Green Salad w/ Sunflower Seed</li>
-            <li>Paprika Fries w/ Scallion</li>
+            <li class = "list-items-one">Multigrain Rice <span> w/ Scallion </span></li>
+            <li class = "list-items-one">Green Salad <span>w/ Sunflower Seed</span></li>
+            <li class = "list-items-one">Paprika Fries <span>w/ Scallion</span></li>
         </ul>`;
     firsColumnDiv.appendChild(firstTextContent);
+
+    //second item in custom bowl
     
+    const secondTextContent = document.createElement('div');
+    secondTextContent.classList.add('second-text-content');
+    secondTextContent.innerHTML = ` 
+        <h2 class = "custom-bowl-heading-two">2. CHOOSE PROTEIN</h2>
+        <ul class = "ul-cutom-bowl-two">
+            <li class = "list-items-two">BUTTERMILK CRISPY CHICKEN <span> $17.95 </span> </li>
+            <ul>
+                <li class = "list-items-two-inside">- Original</li>
+                <li class = "list-items-two-inside"> - Soy Vinaigrette <span>+$1.00</span></li>
+                <li class = "list-items-two-inside">- Chili Peppercorn <span>+$2.00</span></li>
+            </ul>
+            </li>
+            <li class = "list-items-two">BULGOGI BEEF DF <span>$18.95</span></li>
+            <li class = "list-items-two">SPICY PORK KIMCHI DF <span>$17.95</span></li>
+            <li class = "list-items-two">TOFU CAULIFLOWER VG <span>$17.75</span></li>
+        </ul>`;
+    firsColumnDiv.appendChild(secondTextContent);
     
 }
 
