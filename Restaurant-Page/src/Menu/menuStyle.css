@@ -109,3 +109,46 @@ span{
     padding: 0px 0px 10px 20px;
 }
 
+.middle-div-heading-1{
+    padding: 30px 0px 0px 30px;
+}
+
+.middle-items{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 0px 15px 60px;
+}
+
+.middle-items-p{
+    padding-left: 40px;
+}
+
+.middle-bowl-list{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.extras-list{
+    padding-left: 80px;
+}
+
+.price{
+    padding-left: 10px;
+}
+
+.items-list{
+    padding-bottom: 15px;
+    list-style-type: disc;
+}
+
+.second-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 100px 30px 100px;
+    padding: 10px ;
+    font-weight: bolder;
+    font-size: medium;
+    background-color: rgba(17, 153, 135, 0.308);
+}

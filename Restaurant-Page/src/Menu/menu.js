@@ -151,22 +151,55 @@ function menuPage() {
 
     secondColumnDiv.innerHTML = ` 
 
-        <h2 class = "middle-div-heading-1">CHOOSE TOSS-INS (UP TO 3)</h2>
-            <p>Select your choice of toss-ins. You can choose up to 3.</p>
+        <h2 class = "middle-div-heading-1">3. CHOOSE TOSS-INS (UP TO 3)</h2>
+            <p class="middle-items-p">You can choose up to 3.</p>
         <ul>
-            <li> GREEN SALAD, CORN, EDAMAME, PICKLED CARROT, PICKLED RED ONION, PICKLED PEPPER, PICKLED RED CABBAGE, RED RADISH, SCALLION, SUNFLOWER SEED, CRISPY SHALLOT, COCONUT FLAKE </li>
+            <li class= "middle-items"> GREEN SALAD, CORN, EDAMAME, PICKLED CARROT, PICKLED RED ONION</li>
+            <li class= "middle-items"> PICKLED PEPPER, PICKLED RED CABBAGE, RED RADISH, SCALLION, SUNFLOWER SEED, CRISPY SHALLOT, COCONUT FLAKE </li>
         </ul>
-        <h3>OR</h3>
-        <h2>CHOOSE SAUCES (TWO SAUCES 1oz OR ONE DRESSING 2oz)</h2>
-        <ul>
-            <li>VEGAN RANCH VG GF <span>($0.50)</span></li>
-            <li>GARLIC RANCH GF <span>($0.50)</span></li>
-            <li>ORIENTAL VINAIGRETTE VG <span>($0.50)</span></li>
-            <li>SWEET BEET VG GF <span>($0.50)</span></li>
-            <li>SWEET CHILI VG <span>($0.50)</span></li>
-            <li>CHILI CHILI VG <span>($0.50)</span></li>
+        <h2 class = "middle-div-heading-1">4. CHOOSE SAUCES</h2>
+        <ul class = "ul-cutom-bowl-two">
+            <li class = "middle-bowl-list">VEGAN RANCH VG GF <span>($0.50)</span></li>
+            <li class = "middle-bowl-list">GARLIC RANCH GF <span>($0.50)</span></li>
+            <li class = "middle-bowl-list">ORIENTAL VINAIGRETTE VG <span>($0.50)</span></li>
+            <li class = "middle-bowl-list">SWEET BEET VG GF <span>($0.50)</span></li>
+            <li class = "middle-bowl-list">SWEET CHILI VG <span>($0.50)</span></li>
+            <li class = "middle-bowl-list">CHILI CHILI VG <span>($0.50)</span></li>
         </ul>
     `;    
+
+    // Third column menu content
+
+    thirdColumnDiv.innerHTML = ` 
+    <h2 class = "middle-div-heading-1">5. CHOOSE EXTRAS</h2>
+    <ul class="extras-list">
+        <li class = "items-list">PROTEIN 100g <span class="price">$5.00</span></li>
+        <li class = "items-list">COLESLAW 6oz <span class="price">$4.00</span></li>
+        <li class = "items-list">CABBAGE KIMCHI VG 4oz <span class="price">$3.00</span></li>
+        <li class = "items-list">PICKLES 4oz <span class="price">$3.00</span></li>
+        <li class = "items-list">Carrot/Pepper/Red Onion/Red Cabbage</li>
+        <li class = "items-list">MOZZA & CHEDDAR 4oz <span class="price">$3.00</span></li>
+        <li class = "items-list">POACHED EGG <span class="price">$2.00</span></li>
+        <li class = "items-list">SMASHED POTATO <span class="price">$2.00</span></li>
+        <li class = "items-list">EDAMAME HUMMUS <span class="price">$2.00</span></li>
+        <li class = "items-list">SAUCE or DRESSING 2oz <span class="price">$2.00</span></li>
+        <li class = "items-list">PAPER BAG <span class="price">$0.15</span></li>
+    </ul>`;
+
+    //Third div for the menu
+    const secondText = document.createElement('div');
+    secondText.classList.add('second-text');
+    secondText.textContent = 'Having hard time to choose? Experience the best of our flavors with the signature Bowl menu, a curated delight for those seeking our most popular and beloved combination.' ;
+    menuDiv.appendChild(secondText);
+
+    //Fourth div for the menu
+    const outerDiv = document.createElement('div');
+    outerDiv.classList.add('outer-div-fouth-container-menu');
+    menuDiv.appendChild(outerDiv);
+    const firstDivFourth = document.createElement('div');
+    firstDivFourth.classList.add('first-div-fourth');
+    outerDiv.appendChild(firstDivFourth);
+    
     
 }
 
