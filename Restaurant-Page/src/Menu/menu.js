@@ -117,6 +117,15 @@ function menuPage() {
 
     //First menu text content
     const firstTextContent = document.createElement('div');
+    firstTextContent.classList.add('first-text-content');
+    firstTextContent.innerHTML = ` 
+        <h2 class = "custom-bowl-heading-one">1. Choose Your Base </h2>
+        <ul class = "ul-cutom-bowl-one">
+            <li>Multigrain Rice w/ Scallion</li>
+            <li>Green Salad w/ Sunflower Seed</li>
+            <li>Paprika Fries w/ Scallion</li>
+        </ul>`;
+    firsColumnDiv.appendChild(firstTextContent);
     
     
 }

@@ -69,3 +69,14 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/*Styling the custom bowl section of the menu */
+
+.custom-bowl-heading-one{
+    padding: 30px 0px 0px 30px;
+    
+}
+
+.ul-cutom-bowl-one{
+    
+}
