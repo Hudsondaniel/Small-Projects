@@ -119,7 +119,7 @@ function menuPage() {
     const firstTextContent = document.createElement('div');
     firstTextContent.classList.add('first-text-content');
     firstTextContent.innerHTML = ` 
-        <h2 class = "custom-bowl-heading-one">1. Choose Your Base </h2>
+        <h2 class = "custom-bowl-heading-one">1. CHOOSE BASE </h2>
         <ul class = "ul-cutom-bowl-one">
             <li class = "list-items-one">Multigrain Rice <span> w/ Scallion </span></li>
             <li class = "list-items-one">Green Salad <span>w/ Sunflower Seed</span></li>
@@ -146,6 +146,27 @@ function menuPage() {
             <li class = "list-items-two">TOFU CAULIFLOWER VG <span>$17.75</span></li>
         </ul>`;
     firsColumnDiv.appendChild(secondTextContent);
+
+    //middle section of the custom bowl menu section
+
+    secondColumnDiv.innerHTML = ` 
+
+        <h2 class = "middle-div-heading-1">CHOOSE TOSS-INS (UP TO 3)</h2>
+            <p>Select your choice of toss-ins. You can choose up to 3.</p>
+        <ul>
+            <li> GREEN SALAD, CORN, EDAMAME, PICKLED CARROT, PICKLED RED ONION, PICKLED PEPPER, PICKLED RED CABBAGE, RED RADISH, SCALLION, SUNFLOWER SEED, CRISPY SHALLOT, COCONUT FLAKE </li>
+        </ul>
+        <h3>OR</h3>
+        <h2>CHOOSE SAUCES (TWO SAUCES 1oz OR ONE DRESSING 2oz)</h2>
+        <ul>
+            <li>VEGAN RANCH VG GF <span>($0.50)</span></li>
+            <li>GARLIC RANCH GF <span>($0.50)</span></li>
+            <li>ORIENTAL VINAIGRETTE VG <span>($0.50)</span></li>
+            <li>SWEET BEET VG GF <span>($0.50)</span></li>
+            <li>SWEET CHILI VG <span>($0.50)</span></li>
+            <li>CHILI CHILI VG <span>($0.50)</span></li>
+        </ul>
+    `;    
     
 }
 
