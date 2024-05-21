@@ -269,8 +269,24 @@ function menuPage() {
     const secondInnerDivSideTwo = document.createElement('div');
     secondInnerDivSideTwo.classList.add('second-inner-div-side-two');
     secondInnerDivSide.appendChild(secondInnerDivSideTwo);
+
+    const secondInnerDivSideHeading = document.createElement('h1');
+    secondInnerDivSideHeading.classList.add('second-inner-div-side-heading');
+    secondInnerDivSideOne.appendChild(secondInnerDivSideHeading);
+    secondInnerDivSideHeading.textContent = 'DRINKS';
     
-    
+    const htmlDrinks = document.createElement('div');
+    htmlDrinks.classList.add('html-drinks');
+    secondInnerDivSideTwo.appendChild(htmlDrinks);
+    htmlDrinks.innerHTML = ` 
+    <ul class="drinks">
+        <li class="drinks-items1">BUTTERMILK CRISPY CHICKEN BAO + PAPRIKA FRIES</li>
+        <li class="drinks-items">BULGOGI BEEF BAO + WONTON SOUP</li>
+        <li class="drinks-items">SPICY PORK KIMCHI BAO + CORN RIB</li>
+        <li class="drinks-items">TOFU CAULIFLOWER BAO + SMASHED POTATO</li>
+    </ul>
+    `;
+
 }
 
 
