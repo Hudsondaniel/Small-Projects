@@ -10,7 +10,7 @@ function menuPage() {
 
     // Need three divs for the menu
 
-    //First div for the menu
+    //First div for the menu 
 
     const menuOneDiv = document.createElement('div');
     menuOneDiv.classList.add('menu-one');
@@ -220,6 +220,14 @@ function menuPage() {
     secondInnerDivtText.classList.add('second-inner-div-text');
     secondInnerDiv.appendChild(secondInnerDivtText);
     secondInnerDivtText.textContent = 'SIDE';
+
+    //Second container of the first div fourth
+    const secondInnerDivBao = document.createElement('div');
+    secondInnerDivBao.classList.add('second-inner-div-bao');
+    firstDivFourth.appendChild(secondInnerDivBao);
+    secondInnerDivBao.innerHTML = `
+    
+    `;
     
 }
 
