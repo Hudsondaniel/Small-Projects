@@ -243,6 +243,33 @@ function menuPage() {
         <li class="bao-combo-items">SPICY PORK KIMCHI BAO + CORN RIB</li>
         <li class="bao-combo-items">TOFU CAULIFLOWER BAO + SMASHED POTATO</li>
     </ul>`;
+
+    //Side menu implementation
+    const firstInnerDivSide = document.createElement('div');
+    firstInnerDivSide.classList.add('first-inner-div-side');
+    secondDivFourth.appendChild(firstInnerDivSide);
+    firstInnerDivSide.innerHTML = `
+    <h2 class="side">PAPRIKA FRIES <span>$6.00</span></h2>
+    <p class="bao-in">Paprika Salt, Dried Seaweed, Garlic, Ranch</p>
+    <h2 class="bao">SMASHED POTATO <span>$7.00</span></h2>
+    <p class="bao-in">Paprika Salt, Dried Seaweed</p>
+    <h2 class="bao">CORN RIB<span>$8.00</span></h2>
+    <p class="bao-in">Paprika Salt, Dried Seaweed, Coconut Flake</p>
+    <h2 class="bao">TOFU CAULIFLOWER BITE <span>$13.00</span></h2>
+    <p class="bao-in">Edamame Hummus, Coconut Flake, Crispy shallot, Scallion</p>
+    <h2 class="bao">BUTTERMIL CRISPY CHICKEN NUGGET <span>$15.00</span></h2>
+    <p class="bao-in">Scallion, Sweet Chilli</p>`;
+
+    const secondInnerDivSide = document.createElement('div');
+    secondInnerDivSide.classList.add('second-inner-div-side');
+    secondDivFourth.appendChild(secondInnerDivSide);
+    const secondInnerDivSideOne = document.createElement('div');
+    secondInnerDivSideOne.classList.add('second-inner-div-side-one');
+    secondInnerDivSide.appendChild(secondInnerDivSideOne);
+    const secondInnerDivSideTwo = document.createElement('div');
+    secondInnerDivSideTwo.classList.add('second-inner-div-side-two');
+    secondInnerDivSide.appendChild(secondInnerDivSideTwo);
+    
     
 }
 
