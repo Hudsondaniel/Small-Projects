@@ -13,6 +13,19 @@ function aboutPage(){
    picAbout.setAttribute('src', AboutPic);
    picBoxAbout.appendChild(picAbout);
 
+   const textBoxAbout = document.createElement('div');
+   textBoxAbout.classList.add('text-box-about');
+   outerBox.appendChild(textBoxAbout);
+   textBoxAbout.innerHTML = `
+   <div class="text">
+      <h2 class="title-text">2014, LOWER MAINLAND</h2>
+      <p class="text-p">Proin lacinia purus id faucibus iaculis. Nullam ultricies, eros eget cursus porttitor, sem neque blandit tellus, eu consectetur orci ipsum vel libero. Duis consequat libero purus, sit amet facilisis purus hendrerit et. Fusce id arcu suscipit, aliquet mauris ac, interdum elit. Morbi lacus nulla, volutpat ut metus lacinia</p>
+      <h2 class="title-text">2017, VANCOUVER</h2>
+      <p class="text-p">. Quisque aliquam quam sed libero dignissim volutpat. Pellentesque hendrerit ex vel posuere faucibus. Aenean vitae magna faucibus metus auctor rutrum. Phasellus elementum in libero at congue. Fusce lectus arcu, lacinia et velit in, ornare ullamcorper purus. Suspendisse id aliquam neque.</p>
+      <h2 class="title-text">2019, DAVIE VILLAGE</h2>
+      <p class="text-p">Nulla consequat elit eu sagittis consectetur. Duis sit amet elit non orci vehicula euismod eget a risus. Cras arcu nisl, convallis ut gravida et, lacinia non erat. Etiam nulla magna, gravida in scelerisque a, congue at purus. Aliquam facilisis eros sed mi eleifend, eu varius turpis tincidunt. </p>
+   </div>`;
+
    const textDiv = document.createElement('div');
    textDiv.classList.add('text-div-about');
    outerBox.appendChild(textDiv);
