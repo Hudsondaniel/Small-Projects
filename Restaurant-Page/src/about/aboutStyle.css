@@ -21,3 +21,21 @@
     border-radius: 20px;
 }
 
+/* Feedback container */
+
+.text-Form-div-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(255, 151, 16, 0.438);
+    margin: 0px 150px 50px 150px;
+}
+
+.feedback-title{
+    padding-top: 10px;
+}
+
+.feedback-text{
+    padding-bottom: 10px;
+}
