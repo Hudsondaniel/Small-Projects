@@ -131,3 +131,29 @@
                 -1px -1px 0 #000;
 }
 
+
+.text-box-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 250px 50px 250px;
+}
+
+.text-p{
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.title-text{
+    color: rgb(0, 0, 0);
+}
+
+.group-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
