@@ -13,6 +13,14 @@ function aboutPage(){
    picAbout.setAttribute('src', AboutPic);
    picBoxAbout.appendChild(picAbout);
 
+   const textDiv = document.createElement('div');
+   textDiv.classList.add('text-div-about');
+   outerBox.appendChild(textDiv);
+   
+   textDiv.innerHTML =`
+   <h2 class="feedback-title">FEEDBACK & OTHER INQUIRIES</h2>
+   <p class="feedback-text">If you would like to share your experience with us or have other inquiries, Please fill out the form below. We'll get back to you as soon as possible</p>
+   `;
    
 }
 
