@@ -43,7 +43,7 @@ function aboutPage(){
          <textarea id="message" class="message-form" name="message" placeholder="Your message"></textarea>
 
          <div class="button-container">
-            <button type="submit">Send</button>
+            <button type="submit">Submit</button>
          </div>
       </form>
    </div>`;
