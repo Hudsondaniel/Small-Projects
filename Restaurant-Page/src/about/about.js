@@ -27,28 +27,26 @@ function aboutPage(){
    outerBox.appendChild(formDiv);
    formDiv.innerHTML = `
    <div class="form">
-   <form action="">
+      <form action="">
+         <label for="name">Name</label>
+         <input type="text" id="name" class="name-form" required placeholder="Name">
 
-      <label for="name">Name</label>
-      <input type="text" id="name" class="name-form" required placeholder="Name">
+         <label for="email">Email</label>
+         <input type="email" id="email" class="email-form" name="email" required placeholder="Email">
 
-      <label for="email">Email</label>
-      <input type="email" id="email" class="email-form" name="email" required placeholder="Email">
+         <label for="name">Phone number</label>
+         <input type="number" id="name" maxlength="10" class="phone-form" name="name" required placeholder="Phone Number">
 
-      <label for="name">Phone number</label>
-      <input type="number" id="name" maxlength="10" class="phone-form" name="name" required placeholder="Phone Number">
+         <label for="subject">What are you getting in touch about?</label>
+         <input type="text" id="subject" class="subject-form" name="subject" placeholder="Subject of your message">
 
-      <label for="subject">What are you getting in touch about?</label>
-      <input type="text" id="subject" class="subject-form" name="subject" placeholder="Subject of your message">
+         <label for="message">Your Message</label>
+         <textarea id="message" class="message-form" name="message" placeholder="Your message"></textarea>
 
-      <label for="message">Your Message</label>
-      <textarea id="message" class="message-form" name="message" placeholder="Your message"></textarea>
-
-      <div class="button-container">
-         <button type="submit">Send</button>
-      </div>
-
-   </form>
+         <div class="button-container">
+            <button type="submit">Send</button>
+         </div>
+      </form>
    </div>`;
    
 }

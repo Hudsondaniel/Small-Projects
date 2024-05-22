@@ -41,3 +41,54 @@
     padding-bottom: 10px;
 
 }
+
+/* Styling for form elements */
+
+.form {
+    display: flex; /* Make the form container a flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally within the form */
+    width: fit-content; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form horizontally on the page */
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  
+  .form label {
+    display: block; /* Make labels display on separate lines */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="number"] {
+    width: 100%; /* Set width for all text and number inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .form textarea {
+    width: 100%; /* Set width for the textarea */
+    height: 100px; /* Adjust height as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .form .button-container {
+    margin-top: 10px; /* Add some margin above the button */
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .form button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #4CAF50; /* Set button background color */
+    color: white; /* Set button text color */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
