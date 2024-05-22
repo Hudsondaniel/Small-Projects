@@ -27,20 +27,19 @@ function aboutPage(){
    outerBox.appendChild(formDiv);
    formDiv.innerHTML = `
    <div class="form">
+      
       <form action="">
-         <label for="name">Name</label>
-         <input type="text" id="name" class="name-form" required placeholder="Name">
+         <h1 class="form-title">Contact Us</h3>
+         <div class="form-group-one">
+            <input type="text" id="name" class="name-form" required placeholder="Your Name">
+            <input type="email" id="email" class="email-form" name="Your email" required placeholder="Email">
+         </div>
 
-         <label for="email">Email</label>
-         <input type="email" id="email" class="email-form" name="email" required placeholder="Email">
+         <div class="form-group-two">
+            <input type="number" id="name" maxlength="10" class="phone-form" name="name" required placeholder="Phone Number">
+            <input type="text" id="subject" class="subject-form" name="subject" placeholder="Subject of your message">
+         </div>
 
-         <label for="name">Phone number</label>
-         <input type="number" id="name" maxlength="10" class="phone-form" name="name" required placeholder="Phone Number">
-
-         <label for="subject">What are you getting in touch about?</label>
-         <input type="text" id="subject" class="subject-form" name="subject" placeholder="Subject of your message">
-
-         <label for="message">Your Message</label>
          <textarea id="message" class="message-form" name="message" placeholder="Your message"></textarea>
 
          <div class="button-container">
