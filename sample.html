@@ -1,18 +1,24 @@
-<form action="">
-  
-  <label for="name">Name:</label>
-  <input type="text" id="name" class="name-form" required placeholder="Enter Your name">
-  
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required placeholder="Enter your name">
+<div class="form">
+  <form action="">
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required placeholder="Enter your email address">
+    <label for="name">Name</label>
+    <input type="text" id="name" class="name-form" required placeholder="Name">
 
-  <label for="subject">Subject:</label>
-  <input type="text" id="subject" name="subject" placeholder="Enter the subject of your message">
+    <label for="email">Email</label>
+    <input type="email" id="email" class="email-form" name="email" required placeholder="Email">
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+    <label for="name">Phone number</label>
+    <input type="number" id="name" maxlength="10" class="phone-form" name="name" required placeholder="Phone Number">
 
-</form>
+    <label for="subject">What are you getting in touch about?</label>
+    <input type="text" id="subject" class="subject-form" name="subject" placeholder="Subject of your message">
+
+    <label for="message">Your Message</label>
+    <textarea id="message" class="message-form" name="message" placeholder="Your message"></textarea>
+
+    <div class="button-container">
+      <button type="submit">Send</button>
+    </div>
+
+  </form>
+</div>
