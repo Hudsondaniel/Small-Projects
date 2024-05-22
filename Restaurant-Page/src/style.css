@@ -10,6 +10,14 @@
     font-style: normal;
 }
 
+#content{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 body{
     margin: 0px;
     padding: 0px;

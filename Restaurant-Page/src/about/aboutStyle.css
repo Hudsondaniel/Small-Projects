@@ -1,0 +1,22 @@
+.outer-box-about{
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.pic-box-about{
+    width: 100%;
+    height: 100%;
+    padding: 110px 50px 100px 50px;
+}
+
+.pic-about{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
