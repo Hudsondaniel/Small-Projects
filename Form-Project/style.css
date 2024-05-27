@@ -105,7 +105,7 @@ a{
 
 .right-container{
     display: grid;
-    grid-template-rows: 200px 1fr 100px;
+    grid-template-rows: 200px auto 100px;
 }
 
 .right-top-div{
@@ -126,6 +126,17 @@ span{
 .right-bottom-div{
     display: flex;
     flex-direction: column;
-    padding: 0px 50px 0px 50px ;
+    padding: 10px 50px 0px 50px ;
 }
 
+/* form design */
+
+.right-middle-div{
+    padding: 50px;
+}
+
+.first-two-boxes, .second-two-boxes, .third-two-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
