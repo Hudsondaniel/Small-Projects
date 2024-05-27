@@ -28,8 +28,8 @@ function clearElement(elementID) {
 }
 
 function handleHeaderNav() {
-    aboutPage(); // Call homePage before potential clear
-    aboutBtn.classList.add("selected");
+    homePage(); // Call homePage before potential clear
+    homeBtn.classList.add("selected");
 
     const buttons = document.querySelectorAll('header nav button'); // Assuming buttons are within header nav
 
