@@ -111,7 +111,8 @@ a{
 .right-top-div{
     display: flex;
     flex-direction: column;
-    padding: 70px 100px 0px 50px ;
+    padding: 70px 100px 0px 50px;
+    background-color: rgba(211, 211, 211, 0.219);
 }
 
 h3{
@@ -126,17 +127,41 @@ span{
 .right-bottom-div{
     display: flex;
     flex-direction: column;
-    padding: 10px 50px 0px 50px ;
+    padding: 10px 50px 0px 50px;
+    background-color: rgba(211, 211, 211, 0.219);
 }
 
 /* form design */
 
 .right-middle-div{
-    padding: 50px;
+    padding-left: 50px;
 }
 
 .first-two-boxes, .second-two-boxes, .third-two-boxes{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    padding-bottom: 30px;
+}
+
+.form-title{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgba(99, 151, 15, 0.788);
+}
+
+input::placeholder{
+    padding-left: 20px;
+    color: rgb(3, 51, 3);
+}
+
+.sign-up-button{
+    background-color: green;
+    color: white;
 }
