@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('./Assets/Norse-Bold.otf')format('opentype');
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -105,7 +108,7 @@ a{
 
 .right-container{
     display: grid;
-    grid-template-rows: 200px auto 100px;
+    grid-template-rows: 200px 350px auto;
 }
 
 .right-top-div{
@@ -162,6 +165,28 @@ input::placeholder{
 }
 
 .sign-up-button{
-    background-color: green;
+    background-color:olivedrab;
     color: white;
 }
+
+/* Left bar logo design */
+
+.logo-div{
+    display: flex;
+    font-family: 'Norse Bold', sans-serif;
+    position: absolute; /* Position the text absolutely within the container */
+    top: 25%; /* Center vertically (adjust as needed) */
+    left: 15%; /* Center horizontally (adjust as needed) */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background (optional) */
+    color: white; /* Text color */
+    padding: 10px; /* Padding for the text content */
+    font-size: 28px; /* Text size */
+}
+
+.logo-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
