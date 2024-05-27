@@ -92,3 +92,10 @@ body{
     height: 100vh;  
     object-fit: cover; 
 }
+
+/* working on the right side container */
+
+.right-container{
+    display: grid;
+    grid-template-rows: 200px 1fr 100px;
+}
