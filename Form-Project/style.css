@@ -174,19 +174,21 @@ input::placeholder{
 .logo-div{
     display: flex;
     font-family: 'Norse Bold', sans-serif;
+    align-items: center;
+    justify-content: space-between;
     position: absolute; /* Position the text absolutely within the container */
     top: 25%; /* Center vertically (adjust as needed) */
     left: 15%; /* Center horizontally (adjust as needed) */
     transform: translate(-50%, -50%); /* Center the text precisely */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background (optional) */
     color: white; /* Text color */
-    padding: 10px; /* Padding for the text content */
-    font-size: 28px; /* Text size */
+    padding: 10px 140px 10px 100px; /* Padding for the text content */
+    font-size: 80px; /* Text size */
 }
 
 .logo-img{
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
