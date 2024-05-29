@@ -22,7 +22,6 @@ figure, blockquote, dl, dd {
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
-    list-style-type: none;
 }
 
 /* Set core body defaults */
@@ -72,5 +71,3 @@ textarea:not([rows]) {
 :target {
     scroll-margin-block: 5ex;
 }
-
-/* Starting style for project */
