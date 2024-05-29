@@ -91,6 +91,10 @@ body {
     
 }
 
+ul{
+    padding: 0px;
+}
+
 nav{
     display: flex;
     flex-direction: column;
@@ -107,3 +111,27 @@ nav{
     border-radius: 20px;
 }
 
+.title {
+    --s: 0.1em; /* the thickness of the line */
+    --c: black; /* the color */
+    
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: #0000; /* Transparent color to make the gradient visible */
+    padding-bottom: var(--s);
+    background: 
+        linear-gradient(90deg, var(--c) 50%, rgb(123,125,198) 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+            background-clip: text, padding-box;
+    transition: 0.5s;
+    font-family: "Teachers", sans-serif;
+    cursor: pointer;
+}
+
+.title:hover {
+    --_p: 100%;
+}
