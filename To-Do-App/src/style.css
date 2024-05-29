@@ -79,7 +79,7 @@ textarea:not([rows]) {
 
 body {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 350px 1fr;
     margin: 0px;
     padding: 0px;
     font-family: "Teachers", sans-serif;
@@ -95,10 +95,15 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: calc(100% - 6vh);
     background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    margin: calc(2vh) 0;
+    margin-top: 3vh; /* Top margin */
+    margin-left: 2vw; /* Left margin */
+    margin-bottom: 3vh; /* Bottom margin */
+    margin-right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
