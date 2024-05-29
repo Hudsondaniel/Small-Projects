@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
 /* CSS Reset */
 *,
 *::before,
@@ -20,7 +22,7 @@ figure, blockquote, dl, dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'], li {
     list-style: none;
     list-style-type: none;
 }
@@ -74,3 +76,29 @@ textarea:not([rows]) {
 }
 
 /* Starting style for project */
+
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Teachers", sans-serif;
+    background-image: url(../Assets/BG-Img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin: calc(2vh) 0;
+}
+
