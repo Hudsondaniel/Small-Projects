@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nfunction component() {\n  const element = document.createElement('h1');\n  element.innerHTML = 'Hello World';\n  return element;\n}\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Assets/BG-Img2.jpg */ \"./Assets/BG-Img2.jpg\");\n\n\ndocument.body.style.backgroundImage = `url(${_Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../Assets/BG-Img2.jpg */ \"./Assets/BG-Img2.jpg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* CSS Reset */\r\n*,\r\n*::before,\r\n*::after {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* Prevent font size inflation */\r\nhtml {\r\n    -moz-text-size-adjust: none;\r\n    -webkit-text-size-adjust: none;\r\n    text-size-adjust: none;\r\n}\r\n\r\n/* Remove default margin in favour of better control in authored CSS */\r\nbody, h1, h2, h3, h4, p,\r\nfigure, blockquote, dl, dd {\r\n    margin-block-end: 0;\r\n}\r\n\r\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\r\nul[role='list'],\r\nol[role='list'], li {\r\n    list-style: none;\r\n    list-style-type: none;\r\n}\r\n\r\n/* Set core body defaults */\r\nbody {\r\n    min-height: 100vh;\r\n    line-height: 1.5;\r\n}\r\n\r\n/* Set shorter line heights on headings and interactive elements */\r\nh1, h2, h3, h4,\r\nbutton, input, label {\r\n    line-height: 1.1;\r\n}\r\n\r\n/* Balance text wrapping on headings */\r\nh1, h2,\r\nh3, h4 {\r\n    text-wrap: balance;\r\n}\r\n\r\n/* A elements that don't have a class get default styles */\r\na:not([class]) {\r\n    text-decoration-skip-ink: auto;\r\n    color: currentColor;\r\n}\r\n\r\n/* Make images easier to work with */\r\nimg,\r\npicture {\r\n    max-width: 100%;\r\n    display: block;\r\n}\r\n\r\n/* Inherit fonts for inputs and buttons */\r\ninput, button,\r\ntextarea, select {\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n}\r\n\r\n/* Make sure textareas without a rows attribute are not tiny */\r\ntextarea:not([rows]) {\r\n    min-height: 10em;\r\n}\r\n\r\n/* Anything that has been anchored to should have extra scroll margin */\r\n:target {\r\n    scroll-margin-block: 5ex;\r\n}\r\n\r\n/* Starting style for project */\r\n\r\nbody {\r\n    display: grid;\r\n    grid-template-columns: 350px 1fr;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: \"Teachers\", sans-serif;\r\n    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    height: 100vh;\r\n\r\n    \r\n}\r\n\r\nul{\r\n    padding: 0px;\r\n}\r\n\r\nnav{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    height: calc(100% - 6vh);\r\n    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));\r\n    backdrop-filter: blur(20px);\r\n    -webkit-backdrop-filter: blur(20px);\r\n    margin-top: 3vh; /* Top margin */\r\n    margin-left: 2vw; /* Left margin */\r\n    margin-bottom: 3vh; /* Bottom margin */\r\n    margin-right: 0;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\r\n    border-radius: 20px;\r\n}\r\n\r\n.title {\r\n    --s: 0.1em; /* the thickness of the line */\r\n    --c: black; /* the color */\r\n    \r\n    display: flex;\r\n    font-size: 45px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    padding-bottom: 50px;\r\n    color: #0000; /* Transparent color to make the gradient visible */\r\n    padding-bottom: var(--s);\r\n    background: \r\n        linear-gradient(90deg, var(--c) 50%, rgb(123,125,198) 0) calc(100% - var(--_p, 0%)) / 200% 100%,\r\n        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;\r\n    -webkit-background-clip: text, padding-box;\r\n            background-clip: text, padding-box;\r\n    transition: 0.5s;\r\n    font-family: \"Teachers\", sans-serif;\r\n    cursor: pointer;\r\n}\r\n\r\n.title:hover {\r\n    --_p: 100%;\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `/* CSS Reset */\r\n*,\r\n*::before,\r\n*::after {\r\n    box-sizing: border-box;\r\n}\r\n\r\n/* Prevent font size inflation */\r\nhtml {\r\n    -moz-text-size-adjust: none;\r\n    -webkit-text-size-adjust: none;\r\n    text-size-adjust: none;\r\n}\r\n\r\n/* Remove default margin in favour of better control in authored CSS */\r\nbody, h1, h2, h3, h4, p,\r\nfigure, blockquote, dl, dd {\r\n    margin-block-end: 0;\r\n}\r\n\r\n/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */\r\nul[role='list'],\r\nol[role='list'], li {\r\n    list-style: none;\r\n    list-style-type: none;\r\n}\r\n\r\n/* Set core body defaults */\r\nbody {\r\n    min-height: 100vh;\r\n    line-height: 1.5;\r\n}\r\n\r\n/* Set shorter line heights on headings and interactive elements */\r\nh1, h2, h3, h4,\r\nbutton, input, label {\r\n    line-height: 1.1;\r\n}\r\n\r\n/* Balance text wrapping on headings */\r\nh1, h2,\r\nh3, h4 {\r\n    text-wrap: balance;\r\n}\r\n\r\n/* A elements that don't have a class get default styles */\r\na:not([class]) {\r\n    text-decoration-skip-ink: auto;\r\n    color: currentColor;\r\n}\r\n\r\n/* Make images easier to work with */\r\nimg,\r\npicture {\r\n    max-width: 100%;\r\n    display: block;\r\n}\r\n\r\n/* Inherit fonts for inputs and buttons */\r\ninput, button,\r\ntextarea, select {\r\n    font-family: inherit;\r\n    font-size: inherit;\r\n}\r\n\r\n/* Make sure textareas without a rows attribute are not tiny */\r\ntextarea:not([rows]) {\r\n    min-height: 10em;\r\n}\r\n\r\n/* Anything that has been anchored to should have extra scroll margin */\r\n:target {\r\n    scroll-margin-block: 5ex;\r\n}\r\n\r\n/* Starting style for project */\r\n\r\nbody {\r\n    display: grid;\r\n    grid-template-columns: 350px 1fr;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: \"Teachers\", sans-serif;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    height: 100vh;\r\n\r\n    \r\n}\r\n\r\nul{\r\n    padding: 0px;\r\n}\r\n\r\nnav{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n    height: calc(100% - 6vh);\r\n    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));\r\n    backdrop-filter: blur(20px);\r\n    -webkit-backdrop-filter: blur(20px);\r\n    margin-top: 3vh; /* Top margin */\r\n    margin-left: 2vw; /* Left margin */\r\n    margin-bottom: 3vh; /* Bottom margin */\r\n    margin-right: 0;\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\r\n    border-radius: 20px;\r\n}\r\n\r\n.title {\r\n    --s: 0.1em; /* the thickness of the line */\r\n    --c: black; /* the color */\r\n    \r\n    display: flex;\r\n    font-size: 45px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    padding-bottom: 50px;\r\n    color: #0000; /* Transparent color to make the gradient visible */\r\n    padding-bottom: var(--s);\r\n    background: \r\n        linear-gradient(90deg, var(--c) 50%, rgb(123,125,198) 0) calc(100% - var(--_p, 0%)) / 200% 100%,\r\n        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;\r\n    -webkit-background-clip: text, padding-box;\r\n            background-clip: text, padding-box;\r\n    transition: 0.5s;\r\n    font-family: \"Teachers\", sans-serif;\r\n    cursor: pointer;\r\n}\r\n\r\n.title:hover {\r\n    --_p: 100%;\r\n}\r\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -40,16 +40,6 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
 /*!**************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
@@ -57,6 +47,16 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    opt
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
+
+/***/ }),
+
+/***/ "./Assets/BG-Img2.jpg":
+/*!****************************!*\
+  !*** ./Assets/BG-Img2.jpg ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/BG-Img2.dbc550e4909acab73c2d1ab91d3494e6.jpg\");\n\n//# sourceURL=webpack:///./Assets/BG-Img2.jpg?");
 
 /***/ }),
 
@@ -128,16 +128,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack:///./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
 
-/***/ }),
-
-/***/ "./Assets/BG-Img2.jpg":
-/*!****************************!*\
-  !*** ./Assets/BG-Img2.jpg ***!
-  \****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"dbc550e4909acab73c2d.jpg\";\n\n//# sourceURL=webpack:///./Assets/BG-Img2.jpg?");
-
 /***/ })
 
 /******/ 	});
@@ -165,9 +155,6 @@ eval("module.exports = __webpack_require__.p + \"dbc550e4909acab73c2d.jpg\";\n\n
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -243,32 +230,6 @@ eval("module.exports = __webpack_require__.p + \"dbc550e4909acab73c2d.jpg\";\n\n
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

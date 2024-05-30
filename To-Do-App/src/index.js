@@ -1,9 +1,4 @@
 import './style.css';
+import bgImg from '../Assets/BG-Img2.jpg'
 
-function component(){
-    const element = document.createElement('h1');
-    element.innerHTML = 'Hello World';
-    return element;
-}
-
-document.body.appendChild(component());
+document.body.style.backgroundImage = `url(${bgImg})`;
