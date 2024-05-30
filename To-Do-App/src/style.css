@@ -79,15 +79,13 @@ textarea:not([rows]) {
 
 body {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 275px 1fr;
     margin: 0px;
     padding: 0px;
     font-family: "Teachers", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-
-    
 }
 
 ul{
@@ -98,16 +96,11 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100% - 6vh);
+    height: 100%;
     background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    margin-top: 3vh; /* Top margin */
-    margin-left: 2vw; /* Left margin */
-    margin-bottom: 3vh; /* Bottom margin */
-    margin-right: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
 }
 
 .title {
@@ -115,7 +108,7 @@ nav{
     --c: black; /* the color */
     
     display: flex;
-    font-size: 45px;
+    font-size: 40px;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
@@ -135,4 +128,25 @@ nav{
     --_p: 100%;
 }
 
+/* Lists styling */
+.main-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 10px 0px 10px;
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.plus-symbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    background: none;
+    border: none;
+    font-size: 35px;
+}
 
