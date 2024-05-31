@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/createNewPro/newProject.js":
+/*!****************************************!*\
+  !*** ./src/createNewPro/newProject.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst plusButton = document.querySelector(\".plus-symbol\");\nconst newProjectList = document.querySelector(\".new-project\");\nfunction createProject() {\n  plusButton.addEventListener('click', function (e) {});\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createProject);\n\n//# sourceURL=webpack:///./src/createNewPro/newProject.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Assets/BG-Img2.jpg */ \"./Assets/BG-Img2.jpg\");\n\n\ndocument.body.style.backgroundImage = `url(${_Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Assets/BG-Img2.jpg */ \"./Assets/BG-Img2.jpg\");\n/* harmony import */ var _src_createNewPro_newProject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/createNewPro/newProject.js */ \"./src/createNewPro/newProject.js\");\n\n\n\n(0,_src_createNewPro_newProject_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\ndocument.body.style.backgroundImage = `url(${_Assets_BG_Img2_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]})`;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
