@@ -10,8 +10,7 @@ function createProject() {
             newProjectList.innerHTML = `
                 <div class="overlay active">
                     <div class="pop-up-content">
-                        <button class="close-mark">X</button>
-                        <input type="text" placeholder="Add a new project">
+                        <input type="text" placeholder="Add A Project To The List">
                         <button class="continue">Continue</button>
                     </div>
                 </div>`;
