@@ -2,6 +2,8 @@ const plusButton = document.querySelector(".plus-symbol");
 const newProjectList = document.querySelector(".new-project");
 const newList = document.querySelector(".my-lists");
 
+let tasks = []; // Array to store tasks
+
 function createProject() {
     if (plusButton) {
         plusButton.addEventListener('click', function(e) {
@@ -30,21 +32,47 @@ function createProject() {
                 });
             }
 
-            //Add event listeneer for continue button
+            // Add event listener for continue button
             const continueButton = document.querySelector(".continue");
             if (continueButton) {
                 continueButton.addEventListener('click', function(e) {
                     e.stopPropagation(); // Prevent the outside click handler from triggering
                     console.log("continue button clicked");
                     const getInput = document.getElementById('getInput');
-                    newList.innerHTML += `
-                    <div class="new-project-list">${getInput.value}</div>`;
+                    const taskName = getInput.value;
+
+                    // Create a new task object
+                    const task = {
+                        id: tasks.length + 1, // Unique ID for the task
+                        name: taskName
+                    };
+
+                    // Add the new task to the tasks array
+                    tasks.push(task);
+
+                    // Render the tasks list
+                    renderTasks();
+
+                    // Hide the popup after adding the task
+                    hidePopup();
                 });
             }
         });
     } else {
         console.log("Plus button not found");
     }
+}
+
+// Function to render tasks
+function renderTasks() {
+    newList.innerHTML = ''; // Clear the current list
+
+    tasks.forEach(task => {
+        const taskItem = document.createElement('li');
+        taskItem.innerHTML = `
+            <div class="new-project-list">${task.name}</div>`;
+        newList.appendChild(taskItem);
+    });
 }
 
 // Function to handle clicks outside the popup
@@ -69,4 +97,8 @@ function hidePopup() {
     console.log("Popup hidden");
 }
 
+// Initialize the createProject function
+createProject();
+
 export default createProject;
+
