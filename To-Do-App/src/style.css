@@ -111,7 +111,7 @@ nav{
     font-size: 40px;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color: #0000; /* Transparent color to make the gradient visible */
     padding-bottom: var(--s);
     background: 
@@ -133,12 +133,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 10px 0px 10px;
-    padding: 5px 25px 5px 25px;
+    margin: 20px 20px 0px 20px;
+    padding: 2px 25px 2px 25px;
     font-size: 20px;
     border-radius: 10px;
     font-weight: bolder;
+    color: white;
     position: relative;
+    background-color: rgb(123,125,198);
 }
 
 
@@ -164,6 +166,10 @@ nav{
 
 .bottom-heading{
     padding-left: 30px;
+}
+
+nav .plus-symbol{
+    color: white;
 }
 
 
