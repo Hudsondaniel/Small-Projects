@@ -38,7 +38,7 @@ function createProject() {
                     console.log("continue button clicked");
                     const getInput = document.getElementById('getInput');
                     newList.innerHTML += `
-                    <div class="new-project-container"><h1>${getInput.value}</h1></div>`;
+                    <div class="new-project-list">${getInput.value}</div>`;
                 });
             }
         });
