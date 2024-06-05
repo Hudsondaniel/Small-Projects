@@ -1,6 +1,11 @@
+import trashIcon from '../../Assets/Icons/delete-icon.svg'
+import finishIcon from '../../Assets/Icons/check-icon.svg'
+
+
 const plusButton = document.querySelector(".plus-symbol");
 const newProjectList = document.querySelector(".new-project");
 const newList = document.querySelector(".my-lists");
+
 
 let tasks = []; // Array to store tasks
 
@@ -70,7 +75,13 @@ function renderTasks() {
     tasks.forEach(task => {
         const taskItem = document.createElement('li');
         taskItem.innerHTML = `
-            <div class="new-project-list">${task.name}</div>`;
+            <div class="new-project-list">
+                <div>${task.name}</div>
+                <div class="icons">
+                    <div class="task-complete"><img src=${finishIcon} alt=""></div>
+                    <div class="trash"><img src=${trashIcon} alt=""></div>
+                </div>
+            </div>`;
         newList.appendChild(taskItem);
     });
 }

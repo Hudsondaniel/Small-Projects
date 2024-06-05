@@ -67,4 +67,14 @@
     background-color: rgb(123,125,198);
 }
 
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    padding-left: 10px;
+}
 
+.task-complete{
+    color: red;
+}
