@@ -1,5 +1,6 @@
 const plusButton = document.querySelector(".plus-symbol");
 const newProjectList = document.querySelector(".new-project");
+const newList = document.querySelector(".my-lists");
 
 function createProject() {
     if (plusButton) {
@@ -10,7 +11,7 @@ function createProject() {
             newProjectList.innerHTML = `
                 <div class="overlay active">
                     <div class="pop-up-content">
-                        <input type="text" placeholder="Add A Project To The List">
+                        <input type="text" id="getInput" placeholder="Add A Project To The List">
                         <button class="continue">Continue</button>
                     </div>
                 </div>`;
@@ -26,6 +27,18 @@ function createProject() {
                 closeMark.addEventListener('click', function(e) {
                     e.stopPropagation(); // Prevent the outside click handler from triggering
                     hidePopup();
+                });
+            }
+
+            //Add event listeneer for continue button
+            const continueButton = document.querySelector(".continue");
+            if (continueButton) {
+                continueButton.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent the outside click handler from triggering
+                    console.log("continue button clicked");
+                    const getInput = document.getElementById('getInput');
+                    newList.innerHTML += `
+                    <div class="new-project-container"><h1>${getInput.value}</h1></div>`;
                 });
             }
         });
