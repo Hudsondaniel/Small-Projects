@@ -1,5 +1,6 @@
 import trashIcon from '../../Assets/Icons/delete-icon.svg'
 import finishIcon from '../../Assets/Icons/check-icon.svg'
+import { createDivForTasks } from '../TaskManager/taskManager';
 
 
 const plusButton = document.querySelector(".plus-symbol");
@@ -112,4 +113,4 @@ function hidePopup() {
 // Initialize the createProject function
 createProject();
 
-export { createProject, renderProjects, handleOutsideClick, hidePopup };
+export { renderProjects, handleOutsideClick, hidePopup, projects };
