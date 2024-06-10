@@ -1,16 +1,18 @@
-import trashIcon from '../../Assets/Icons/delete-icon.svg';
-import finishIcon from '../../Assets/Icons/check-icon.svg';
-import { renderTasks, addTaskToProject } from './taskManager.js';
+import trashIcon from '../../Assets/Icons/delete-icon.svg'
+import finishIcon from '../../Assets/Icons/check-icon.svg'
+
 
 const plusButton = document.querySelector(".plus-symbol");
 const newProjectList = document.querySelector(".new-project");
 const newList = document.querySelector(".my-lists");
 
-let projects = []; // Array to store projects, each with its own tasks
+
+let projects = []; // Array to store tasks
 
 function createProject() {
     if (plusButton) {
         plusButton.addEventListener('click', function(e) {
+            // Prevent the outside click handler from immediately triggering
             e.stopPropagation();
 
             newProjectList.innerHTML = `
@@ -21,40 +23,42 @@ function createProject() {
                     </div>
                 </div>`;
 
+            // Add event listener for outside click
             setTimeout(() => {
                 document.addEventListener('click', handleOutsideClick);
             }, 0);
 
+            // Add event listener for the close button
             const closeMark = document.querySelector(".close-mark");
             if (closeMark) {
                 closeMark.addEventListener('click', function(e) {
-                    e.stopPropagation();
+                    e.stopPropagation(); // Prevent the outside click handler from triggering
                     hidePopup();
                 });
             }
 
+            // Add event listener for continue button
             const continueButton = document.querySelector(".continue");
             if (continueButton) {
                 continueButton.addEventListener('click', function(e) {
-                    e.stopPropagation();
+                    e.stopPropagation(); // Prevent the outside click handler from triggering
                     console.log("continue button clicked");
                     const getInput = document.getElementById('getInput');
                     const projectName = getInput.value;
 
-                    // Create a new project object
+                    // Create a new task object
                     const project = {
-                        id: projects.length + 1, // Unique ID for the project
-                        name: projectName,
-                        tasks: [] // Initialize with an empty tasks array
+                        id: projects.length + 1, // Unique ID for the task
+                        name: projectName
                     };
 
-                    // Add the new project to the projects array
+                    // Add the new task to the tasks array
                     projects.push(project);
 
-                    // Render the projects list
+                    // Render the tasks list
                     renderProjects();
 
-                    // Hide the popup after adding the project
+                    // Hide the popup after adding the task
                     hidePopup();
                 });
             }
@@ -64,27 +68,23 @@ function createProject() {
     }
 }
 
+// Function to render tasks
 function renderProjects() {
     newList.innerHTML = ''; // Clear the current list
 
     projects.forEach(project => {
-        const projectItem = document.createElement('div');
+        const projectItem = document.createElement('li');
         projectItem.innerHTML = `
-            <div class="project">
-                <h3>${project.name}</h3>
-                <ul class="task-list" data-project-id="${project.id}"></ul>
-                <button class="add-task-button" data-project-id="${project.id}">Add Task</button>
+            <div class="new-project-list">
+                <div>${project.name}</div>
+                <div class="icons">
+                    <div class="task-complete"><img src=${finishIcon} alt=""></div>
+                    <div class="trash"><img src=${trashIcon} alt=""></div>
+                </div>
             </div>`;
         newList.appendChild(projectItem);
     });
 
-    // Add event listeners for the new task buttons
-    document.querySelectorAll('.add-task-button').forEach(button => {
-        button.addEventListener('click', function(e) {
-            const projectId = e.target.getAttribute('data-project-id');
-            addTaskToProject(projectId);
-        });
-    });
 }
 
 // Function to handle clicks outside the popup
@@ -112,5 +112,4 @@ function hidePopup() {
 // Initialize the createProject function
 createProject();
 
-export { createProject, renderProjects, projects };
-
+export { createProject, renderProjects, handleOutsideClick, hidePopup };
