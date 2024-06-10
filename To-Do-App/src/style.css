@@ -180,6 +180,11 @@ nav .plus-symbol{
     margin: 0px;
 }
 
+.main-container{
+    display: grid;
+    grid-template-rows: 600px auto;
+}
+
 
 
 
