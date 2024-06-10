@@ -1,18 +1,16 @@
-import trashIcon from '../../Assets/Icons/delete-icon.svg'
-import finishIcon from '../../Assets/Icons/check-icon.svg'
-
+import trashIcon from '../../Assets/Icons/delete-icon.svg';
+import finishIcon from '../../Assets/Icons/check-icon.svg';
+import { renderTasks, addTaskToProject } from './taskManager.js';
 
 const plusButton = document.querySelector(".plus-symbol");
 const newProjectList = document.querySelector(".new-project");
 const newList = document.querySelector(".my-lists");
 
-
-let tasks = []; // Array to store tasks
+let projects = []; // Array to store projects, each with its own tasks
 
 function createProject() {
     if (plusButton) {
         plusButton.addEventListener('click', function(e) {
-            // Prevent the outside click handler from immediately triggering
             e.stopPropagation();
 
             newProjectList.innerHTML = `
@@ -23,42 +21,40 @@ function createProject() {
                     </div>
                 </div>`;
 
-            // Add event listener for outside click
             setTimeout(() => {
                 document.addEventListener('click', handleOutsideClick);
             }, 0);
 
-            // Add event listener for the close button
             const closeMark = document.querySelector(".close-mark");
             if (closeMark) {
                 closeMark.addEventListener('click', function(e) {
-                    e.stopPropagation(); // Prevent the outside click handler from triggering
+                    e.stopPropagation();
                     hidePopup();
                 });
             }
 
-            // Add event listener for continue button
             const continueButton = document.querySelector(".continue");
             if (continueButton) {
                 continueButton.addEventListener('click', function(e) {
-                    e.stopPropagation(); // Prevent the outside click handler from triggering
+                    e.stopPropagation();
                     console.log("continue button clicked");
                     const getInput = document.getElementById('getInput');
-                    const taskName = getInput.value;
+                    const projectName = getInput.value;
 
-                    // Create a new task object
-                    const task = {
-                        id: tasks.length + 1, // Unique ID for the task
-                        name: taskName
+                    // Create a new project object
+                    const project = {
+                        id: projects.length + 1, // Unique ID for the project
+                        name: projectName,
+                        tasks: [] // Initialize with an empty tasks array
                     };
 
-                    // Add the new task to the tasks array
-                    tasks.push(task);
+                    // Add the new project to the projects array
+                    projects.push(project);
 
-                    // Render the tasks list
-                    renderTasks();
+                    // Render the projects list
+                    renderProjects();
 
-                    // Hide the popup after adding the task
+                    // Hide the popup after adding the project
                     hidePopup();
                 });
             }
@@ -68,21 +64,26 @@ function createProject() {
     }
 }
 
-// Function to render tasks
-function renderTasks() {
+function renderProjects() {
     newList.innerHTML = ''; // Clear the current list
 
-    tasks.forEach(task => {
-        const taskItem = document.createElement('li');
-        taskItem.innerHTML = `
-            <div class="new-project-list">
-                <div>${task.name}</div>
-                <div class="icons">
-                    <div class="task-complete"><img src=${finishIcon} alt=""></div>
-                    <div class="trash"><img src=${trashIcon} alt=""></div>
-                </div>
+    projects.forEach(project => {
+        const projectItem = document.createElement('div');
+        projectItem.innerHTML = `
+            <div class="project">
+                <h3>${project.name}</h3>
+                <ul class="task-list" data-project-id="${project.id}"></ul>
+                <button class="add-task-button" data-project-id="${project.id}">Add Task</button>
             </div>`;
-        newList.appendChild(taskItem);
+        newList.appendChild(projectItem);
+    });
+
+    // Add event listeners for the new task buttons
+    document.querySelectorAll('.add-task-button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            const projectId = e.target.getAttribute('data-project-id');
+            addTaskToProject(projectId);
+        });
     });
 }
 
@@ -111,5 +112,5 @@ function hidePopup() {
 // Initialize the createProject function
 createProject();
 
-export default createProject;
+export { createProject, renderProjects, projects };
 
