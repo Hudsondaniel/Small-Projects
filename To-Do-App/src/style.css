@@ -104,7 +104,7 @@ nav{
 
 .title {
     --s: 0.1em; /* the thickness of the line */
-    --c: black; /* the color */
+    --c:  rgb(123,125,198); /* the color */
     
     display: flex;
     font-size: 40px;
@@ -115,8 +115,7 @@ nav{
     color: #0000; /* Transparent color to make the gradient visible */
     padding-bottom: var(--s);
     background: 
-        linear-gradient(90deg, var(--c) 50%, rgb(123,125,198) 0) calc(100% - var(--_p, 0%)) / 200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+        linear-gradient(90deg, var(--c) 50%, black 0) calc(100% - var(--_p, 0%)) / 200% 100%;
     -webkit-background-clip: text, padding-box;
             background-clip: text, padding-box;
     transition: 0.5s;
@@ -129,7 +128,7 @@ nav{
 }
 
 .title-container{
-    border-bottom: 5px solid rgb(123,125,198);
+    border-bottom: 5px solid black;
 }
 
 /* Lists styling */
@@ -182,7 +181,7 @@ nav .plus-symbol{
 
 .main-container{
     display: grid;
-    grid-template-rows: 80px auto;
+    grid-template-rows: 80px 1fr;
 }
 
 .task-list-details{

@@ -12,8 +12,8 @@ function renderTasks(projectId){
         return;
     }
     taskList.innerHTML = `
-    <div class="task-list">
-        <h2>${project.name}</h2>
+    <div class="task-container">
+        <h2 class = "project-name">${project.name}</h2>
         <ul class="tasks">
             ${project.tasks.map(task => `<li>${task.name}</li>`).join('')}
         </ul>
@@ -32,5 +32,6 @@ function renderTasks(projectId){
             renderTasks(projectId); // Re-render tasks
         }
     });
+    
 }
 export { renderTasks };
