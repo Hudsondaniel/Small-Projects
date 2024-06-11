@@ -1,10 +1,12 @@
-import { createProject, renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
+import { renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
 
-function createDivForTasks(){
-    const createDiv = document.querySelector('.new-project-list');
-    createDiv.classList.add('new-task-div');
-    createDiv.addEventListener('click', function(e) {
-        console.log("Div clicked: ");
-    });
+
+
+const taskListDetails = document.querySelector(".task-list")
+
+function renderTasks(projectId){
+    const project = projects.find(p => p.id === projectId);
+    if(!project) return;
+    console.log(taskListDetails);
 }
-export { createDivForTasks };
+export { renderTasks };

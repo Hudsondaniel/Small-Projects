@@ -1,6 +1,6 @@
 import trashIcon from '../../Assets/Icons/delete-icon.svg'
 import finishIcon from '../../Assets/Icons/check-icon.svg'
-import { createDivForTasks } from '../TaskManager/taskManager';
+import { renderTasks } from '../TaskManager/taskManager';
 
 
 const plusButton = document.querySelector(".plus-symbol");
@@ -84,6 +84,10 @@ function renderProjects() {
                 </div>
             </div>`;
         newList.appendChild(projectItem);
+
+        projectItem.addEventListener('click', () => {
+            renderTasks(project.id);
+        });
     });
 
 }
