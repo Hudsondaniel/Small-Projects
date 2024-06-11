@@ -2,11 +2,35 @@ import { renderProjects, handleOutsideClick, hidePopup, projects } from "../crea
 
 
 
-const taskListDetails = document.querySelector(".task-list")
+const taskList = document.querySelector(".task-list")
 
 function renderTasks(projectId){
     const project = projects.find(p => p.id === projectId);
-    if(!project) return;
-    console.log(taskListDetails);
+    if(!project) 
+    {
+        console.log("Project not found");
+        return;
+    }
+    taskList.innerHTML = `
+    <div class="task-list">
+        <h2>${project.name}</h2>
+        <ul class="tasks">
+            ${project.tasks.map(task => `<li>${task.name}</li>`).join('')}
+        </ul>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button class="add-task">Add Task</button>
+    </div>
+`;
+
+    const addTaskButton = taskList.querySelector('.add-task');
+    const taskInput = taskList.querySelector('#taskInput');
+
+    addTaskButton.addEventListener('click', () => {
+        const taskName = taskInput.value;
+        if (taskName.trim()) {
+            project.tasks.push({ name: taskName });
+            renderTasks(projectId); // Re-render tasks
+        }
+    });
 }
 export { renderTasks };

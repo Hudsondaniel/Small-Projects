@@ -50,7 +50,8 @@ function createProject() {
                     // Create a new task object
                     const project = {
                         id: projects.length + 1, // Unique ID for the task
-                        name: projectName
+                        name: projectName,
+                        tasks: []
                     };
 
                     // Add the new task to the tasks array
