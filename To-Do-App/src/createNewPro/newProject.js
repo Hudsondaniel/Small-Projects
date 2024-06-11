@@ -118,4 +118,4 @@ function hidePopup() {
 // Initialize the createProject function
 createProject();
 
-export { renderProjects, handleOutsideClick, hidePopup, projects };
+export { createProject, renderProjects, handleOutsideClick, hidePopup, projects };

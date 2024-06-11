@@ -1,4 +1,4 @@
-import { renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
+import { createProject, renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
 import addIcon from "../../Assets/Icons/Add-Icon.svg"
 
 
@@ -30,7 +30,9 @@ function renderTasks(projectId){
     addTaskButton.addEventListener('click', () => {
         const taskName = taskInput.value;
         if (taskName.trim()) {
-            project.tasks.push({ name: taskName });
+            project.tasks.push(
+                { name: taskName },
+                {id: project.tasks.length + 1 });
             renderTasks(projectId); // Re-render tasks
         }
     });
