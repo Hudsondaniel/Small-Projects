@@ -182,9 +182,13 @@ nav .plus-symbol{
 
 .main-container{
     display: grid;
-    grid-template-rows: 600px auto;
+    grid-template-rows: 80px auto;
 }
 
+.task-list-details{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
 
 
 
