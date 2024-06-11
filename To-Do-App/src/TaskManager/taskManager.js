@@ -1,5 +1,5 @@
 import { renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
-
+import addIcon from "../../Assets/Icons/Add-Icon.svg"
 
 
 const taskList = document.querySelector(".task-list")
@@ -17,8 +17,10 @@ function renderTasks(projectId){
         <ul class="tasks">
             ${project.tasks.map(task => `<li>${task.name}</li>`).join('')}
         </ul>
-        <input type="text" id="taskInput" placeholder="Add a new task">
-        <button class="add-task">Add Task</button>
+        <div class = "input-button">
+            <button class="add-task"><img src="${addIcon}" alt="Add Task"></button>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+        </div>
     </div>
 `;
 
