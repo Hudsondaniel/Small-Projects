@@ -51,7 +51,38 @@ function renderTasks(projectId){
         const taskElement = document.querySelector(`#task-${task.id}`);
         taskElement.addEventListener('click', () =>{
             taskInnerList.innerHTML =`
-            ${task.name}`;
+                <div class="task-inner-div">
+                    <div class="inner-title"><h1>${task.name}</h1></div>
+                    <div class="inner-notes">
+                        <h2>Notes</h2>
+                        ${task.description.map(desc => `
+                        <div>${desc.notes} - ${desc.timestamp}</div>
+                        `).join('')}
+                        <input type="text" id="additionalNotesInput" placeholder="Insert Your Notes">
+                        <button id="addNotesButton">Add Notes</button>
+                    </div>
+                    <div class="inner-attachments">
+                        <h2>Attachments</h2>
+                        <div class="attachment-box"></div>
+                    </div>
+                </div>
+            `;
+            
+        const additionalNotesInput = document.getElementById('additionalNotesInput');
+        const addNotesButton = document.getElementById('addNotesButton');
+
+        addNotesButton.addEventListener('click', () => {
+            const newNote = additionalNotesInput.value.trim();
+            if (newNote) {
+                task.description.push({
+                    notes: newNote,
+                    timestamp: new Date().toISOString()
+                });
+                // Re-render the task details with the updated notes
+                renderTasks(projectId);
+            }
+            console.log(task.description[0]);
+        });
         });
     });
 
