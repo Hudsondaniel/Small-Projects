@@ -45,10 +45,16 @@ img{
     display: grid;
     grid-template-columns: 20px 1fr 100px;
     padding: 10px 20px 10px 20px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+.unique-Task:hover{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.199);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .task-name{
     padding-left: 10px;
-    font-size: 15px;
-
+    font-size: 20px;
 }
