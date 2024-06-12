@@ -15,7 +15,7 @@ function renderTasks(projectId){
     <div class="task-container">
         <h2 class = "project-name">${project.name}</h2>
         <ul class="tasks">
-            ${project.tasks.map(task => `<li>${task.name}</li>`).join('')}
+            ${project.tasks.map(task => `<li id="task-${task.id}">${task.name}</li>`).join('')}
         </ul>
         <div class = "input-button">
             <button class="add-task"><img src="${addIcon}" alt="Add Task"></button>
@@ -31,10 +31,18 @@ function renderTasks(projectId){
         const taskName = taskInput.value;
         if (taskName.trim()) {
             project.tasks.push(
-                { name: taskName },
-                {id: project.tasks.length + 1 });
+                {name: taskName,
+                id: project.tasks.length + 1
+                });
             renderTasks(projectId); // Re-render tasks
         }
+    });
+
+    project.tasks.forEach(task =>{
+        const taskElement = document.querySelector(`#task-${task.id}`);
+        taskElement.addEventListener('click', () =>{
+            console.log(taskElement);
+        });
     });
     
 }
