@@ -17,10 +17,11 @@ function renderTasks(projectId){
         <h2 class = "project-name">${project.name}</h2>
         <ul class="tasks">
             ${project.tasks.map(task => `
-                <li class = "unique-Task" id="task-${task.id}">
-                    <input type="radio" name="radio-button" class="task-radio">
-                    <span>${task.name}</span>
-                    <button class="delete-task" data-task-id="${task.id}">Delete</button>
+                <li class="unique-Task" id="task-${task.id}">
+                    <input type="radio" name="radio-button" class="task-radio" data-task-id="${task.id}">
+                    <span>
+                        <div class="task-name">${task.name}</div>
+                    </span>
                 </li>`).join('')}
         </ul>
         <div class = "input-button">
@@ -55,9 +56,9 @@ function renderTasks(projectId){
     });
 
     //Function to delete a task
-    const deleteTaskButtons = document.querySelectorAll('.delete-task');
-    deleteTaskButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
+    const taskRadios = document.querySelectorAll('.task-radio');
+    taskRadios.forEach(radio => {
+        radio.addEventListener('click', (e) => {
             const taskId = e.target.getAttribute('data-task-id');
             project.tasks = project.tasks.filter(task => task.id != taskId);
             renderTasks(projectId); // Re-render tasks

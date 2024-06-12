@@ -41,6 +41,14 @@ img{
     size: 30px;
 }
 
-.unique-task{
-    
+.unique-Task{
+    display: grid;
+    grid-template-columns: 20px 1fr 100px;
+    padding: 10px 20px 10px 20px;
+}
+
+.task-name{
+    padding-left: 10px;
+    font-size: 15px;
+
 }
