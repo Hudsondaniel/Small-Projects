@@ -1,5 +1,8 @@
 import { createProject, renderProjects, handleOutsideClick, hidePopup, projects } from "../createNewPro/newProject";
 import addIcon from "../../Assets/Icons/Add-Icon.svg"
+import bellIcon from "../../Assets/Icons/Bell-icon.svg"
+import notesIcon from "../../Assets/Icons/notes-icon.svg"
+import tagIcon from "../../Assets/Icons/Tag-icon.svg"
 
 
 const taskList = document.querySelector(".task-list")
@@ -53,6 +56,11 @@ function renderTasks(projectId){
             taskInnerList.innerHTML =`
                 <div class="task-inner-div">
                     <div class="inner-title"><h1>${task.name}</h1></div>
+                    <div class="icons">
+                        <div class="inner-icons"><img src="${bellIcon}" alt=""><p>Remind me</p></div>
+                        <div class="inner-icons"><img src="${notesIcon}" alt=""><p>Personal</p></div>
+                        <div class="inner-icons"><img src="${tagIcon}" alt=""><p>Tags</p></div>
+                    </div>
                     <div class="inner-notes">
                         <h2>Notes</h2>
                         ${task.description.map(desc => `
