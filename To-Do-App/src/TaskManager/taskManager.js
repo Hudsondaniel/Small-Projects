@@ -66,8 +66,10 @@ function renderTasks(projectId){
                         ${task.description.map(desc => `
                         <div>${desc.notes} - ${desc.timestamp}</div>
                         `).join('')}
-                        <input type="text" id="additionalNotesInput" placeholder="Insert Your Notes">
-                        <button id="addNotesButton">Add Notes</button>
+                        <div class="Notes">
+                            <input class="notes-box" type="text" id="additionalNotesInput" placeholder="Insert Your Notes">
+                            <button class="notes-button" id="addNotesButton">Add Notes</button>
+                        </div>
                     </div>
                     <div class="inner-attachments">
                         <h2>Attachments</h2>
