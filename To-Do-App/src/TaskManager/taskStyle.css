@@ -60,7 +60,7 @@ img{
 
 .task-inner-div{
     display: grid;
-    grid-template-rows: 100px auto 250px;
+    grid-template-rows: 80px 50px auto 250px;
     margin: 0px 40px 30px 15px;
     height: 92%;
     width: auto;
@@ -69,6 +69,33 @@ img{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.inner-title, .inner-notes, .inner-attachments{
-    padding-left: 20px;
+.inner-title, .inner-notes, .inner-attachments, .icons-tasks{
+    padding-left: 30px;
+}
+
+.icons-tasks{
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-icons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+    border-radius: 20px;
+}
+
+.inner-task{
+    padding-right: 25px;
+    padding-bottom: 18px;
+    padding-left: 6px;
+    font-weight:500;
+
+}
+
+.inner-img1, .inner-img2, .inner-img3{
+    padding-left: 10px;
 }

@@ -56,10 +56,10 @@ function renderTasks(projectId){
             taskInnerList.innerHTML =`
                 <div class="task-inner-div">
                     <div class="inner-title"><h1>${task.name}</h1></div>
-                    <div class="icons">
-                        <div class="inner-icons"><img src="${bellIcon}" alt=""><p>Remind me</p></div>
-                        <div class="inner-icons"><img src="${notesIcon}" alt=""><p>Personal</p></div>
-                        <div class="inner-icons"><img src="${tagIcon}" alt=""><p>Tags</p></div>
+                    <div class="icons-tasks">
+                        <div class="inner-icons"><img class="inner-img1" src="${bellIcon}" alt=""><h4 class="inner-task">Remind me</h4></div>
+                        <div class="inner-icons"><img class="inner-img2" src="${notesIcon}" alt=""><h4 class="inner-task">Personal</h4></div>
+                        <div class="inner-icons"><img class="inner-img3" src="${tagIcon}" alt=""><h4 class="inner-task">Tags</h4></div>
                     </div>
                     <div class="inner-notes">
                         <h2>Notes</h2>
