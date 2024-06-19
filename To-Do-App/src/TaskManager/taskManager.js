@@ -62,7 +62,7 @@ function renderTasks(projectId){
                         <div class="inner-icons"><img class="inner-img3" src="${tagIcon}" alt=""><h4 class="inner-task">Tags</h4></div>
                     </div>
                     <div class="inner-notes">
-                        <h2>Notes</h2>
+                        <h2 class="notes-title">Notes</h2>
                         ${task.description.map(desc => `
                         <div>${desc.notes} - ${desc.timestamp}</div>
                         `).join('')}
@@ -72,8 +72,10 @@ function renderTasks(projectId){
                         </div>
                     </div>
                     <div class="inner-attachments">
-                        <h2>Attachments</h2>
-                        <div class="attachment-box"></div>
+                        <h2 class="heading-attachment">Attachments</h2>
+                        <div class="attachment-box">
+                            <div class="add-content-button"> Click here to add attachments </div>
+                        </div>
                     </div>
                 </div>
             `;
