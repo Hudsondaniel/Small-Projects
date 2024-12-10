@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="library-script.js" defer></script>
+    <script type="text/javascript" src="./formValidation.js" defer></script>
     <title>Library</title>
 </head>
 <body>
@@ -20,13 +21,16 @@
         <form class="new-book-form">
             <label for="Title"><h2>Title</h2></label><br>
             <input id="title" type="text" placeholder="Enter Book Title" class="form-element" required><br>
+            <span class="error-message" style="display: none; color: #d9534f; font-size: 12px; margin-top: 4px; display: block;">
+                Input must be greater than 0 characters!
+            </span>
             <label for="Author"><h2>Author</h2></label><br>
             <input id="author" type="text" placeholder="Enter Book Author" class="form-element" required><br>
             <label for="number-of-pages"><h2>Pages Read</h2></label><br>
             <input id="pages" type="number" placeholder="Enter Book Title" class="form-element"><br>
             <label for="read-checkbox"><h2>Read Checkbox</h2></label><br>
             <div class="checkbox-container">
-                input id="read-checkbox" type="checkbox" class="form-element"><br>
+                <input id="read-checkbox" type="checkbox" class="form-element"><br>
             </div>
             <div class="submit-button-grid"><button class="submit-button">Add book</button></div>
         </form>  
